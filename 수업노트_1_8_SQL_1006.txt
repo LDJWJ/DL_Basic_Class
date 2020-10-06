@@ -1,0 +1,144 @@
+CREATE TABLE student
+( name varchar(10),
+  no INT(10),
+  addr varchar(10),
+  gender varchar(5)
+);
+
+create table student1
+( name varchar(10),
+  no INT(10),
+  addr varchar(10),
+  gender varchar(5)
+);
+
+DROP TABLE IF EXISTS student1;
+
+INSERT INTO student VALUES 
+  ('학생1', 1, '서울 강남구', 'male');
+INSERT INTO student VALUES
+  ('학생1', 1, '서울 강남구', 'male');
+INSERT INTO student VALUES
+  ('학생1', 1, '서울 강남구', 'male');  
+ 
+SELECT * FROM student;
+
+(실습 2-1) score 테이블을 만들고,
+create table score
+( name varchar(10),
+  math INT,
+  eng INT,
+  kor INT
+);
+데이터를 5건 넣고,
+이를 검색해 보자.
+
+INSERT INTO score VALUES ("kim", 90,80,70);
+INSERT INTO score VALUES ("kim", 90,85,70);
+INSERT INTO score VALUES ("kim", 90,80,75);
+INSERT INTO score VALUES ("kim", 95,82,70);
+INSERT INTO score VALUES ("kim", 90,80,72);
+
+SELECT * FROM score;
+
+* 2-2 추가도전 : name에 같은 이름이 들어가면 데이터가 추가가 안되도록 해보자.
+
+# 테이블 삭제. 같은 이름으로 만들때, 기존의 테이블을 삭제하고 싶다. 
+use mysql;
+DROP TABLE IF EXISTS score;
+
+create table score
+( name varchar(10) NOT NULL,
+  math INT,
+  eng INT,
+  kor INT,
+  PRIMARY KEY(name)
+);
+
+INSERT INTO score VALUES ("kim", 90,80,70);
+INSERT INTO score VALUES ("kim1", 90,85,70);
+INSERT INTO score VALUES ("kim2", 90,85,70);
+INSERT INTO score VALUES ("kim3", 90,85,70);
+INSERT INTO score VALUES ("kim4", 90,85,70);
+
+select * from score;
+
+
+# 기존의 있는 데이터를 바꿔보겠다.
+# kim2 이라는 친구의 수학점수를 확인하고
+# kim2 친구의 -10점을 하겠다.
+
+# 01 kim2 이라는 친구의 수학점수를 확인
+select * from score where name="kim2";
+update score set math=80 where name='kim2';
+
+select * from score where name="kim2";
+
+# 실습 2-3 kim4번 친구의 영어점수를 95점 으로 변경해 보고 확인해 보기
+select * from score where name="kim4";
+update score set eng=95 where name="kim4";
+
+
+* 2-3-1 추가 - 영어 점수가 85점 이상인 친구 전부 출력(select)
+select * from score where eng>=85;
+
+=======================================
+값을 추가하고, 
+INSERT INTO score VALUES ("kim5", 80,85,70);
+INSERT INTO score VALUES ("kim6", 90,85,70);
+
+* 2-3-2 추가 - 영어 점수가 85점 이상 그리고 수학점수가 80점인 친구 전부 출력(select)
+
+
+select * from score where eng>=85 and math=80;
+=======================================
+INSERT INTO score VALUES ("lim3", 80,85,70);
+INSERT INTO score VALUES ("lim2", 90,85,70);
+* 2-3-3 추가 - 이름 중에 lim이 포함한 이름을 갖는 친구를 출력해 보기(select)
+
+select * from score where name like 'lim_';
+select * from score where name like '%lim%';
+
+=======================================
+## 삭제 
+select * from score;
+
+DELETE FROM score where name='kim2' or name='kim3';
+select * from score;
+
+### MYSQL
+
+08 데이터 입력하기
+create table exam2 (
+name varchar(10),
+phone varchar(15),
+id varchar(10),
+city varchar(10)
+)
+insert into exam2(name, phone, city) values(
+                 '김철수', '031-455-2887', '수원');
+insert into exam2(name, phone, city) values(
+                 '김대수', '031-455-2887', '대전');
+insert into exam2(name, phone, city) values(
+                 '홍길동', '031-455-2887', '서울');
+
+
+update exam2 set city='뉴욕' where name='홍길동';
+
+insert into exam2(name, phone, id, city) values('잘못된이름', '031-455-2887', "104", '대전');
+delete from exam2 where name='잘못된이름';
+select * from exam2;
+
+===================================================================
+## 실습 3-2
+ * 01 나만의 데이터 베이스를 만들어본다. mydb02
+ * 02 데이터베이스를 선택(mydb02)
+ * 03 테이블을 하나 만든다. (여러분이 직접) - 하나는 primary key만들기(중복이 안되도록)
+ * 04 데이터를 5건 넣는다.(전부)
+ * 05 데이터를 3건 일부가 비어있도록 넣는다.
+ * 06 alter table을 이용해서 하나의 컬럼을 추가해보고, 
+ * 07 하나의 컬럼명을 변경해 본다.
+ * 08 값을 update를 이용해서 하나 변경해 보자.
+ * 09 마지막으로 like구문을 이용해서 값을 하나 삭제해 보자.
+===================================================================
+
