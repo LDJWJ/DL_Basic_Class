@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>CL02_02_03</title>
+<title>CL02_02_03_예외</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13077,24 +13077,87 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="01.-&#45348;&#51060;&#48260;-&#51452;&#49885;&#51221;&#48372;-&#44032;&#51256;&#50724;&#44592;">01. &#45348;&#51060;&#48260; &#51452;&#49885;&#51221;&#48372; &#44032;&#51256;&#50724;&#44592;<a class="anchor-link" href="#01.-&#45348;&#51060;&#48260;-&#51452;&#49885;&#51221;&#48372;-&#44032;&#51256;&#50724;&#44592;">&#182;</a></h2>
+<h3 id="&#45348;&#51060;&#48260;-&#51452;&#49885;-&#51221;&#48372;-&#44032;&#51256;&#50752;-&#48372;&#44592;-&#49892;&#49845;2">&#45348;&#51060;&#48260; &#51452;&#49885; &#51221;&#48372; &#44032;&#51256;&#50752; &#48372;&#44592;-&#49892;&#49845;2<a class="anchor-link" href="#&#45348;&#51060;&#48260;-&#51452;&#49885;-&#51221;&#48372;-&#44032;&#51256;&#50752;-&#48372;&#44592;-&#49892;&#49845;2">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="https://finance.naver.com/sise/-&#50640;&#49436;-&#51221;&#48372;-&#54925;&#46301;"><a href="https://finance.naver.com/sise/">https://finance.naver.com/sise/</a> &#50640;&#49436; &#51221;&#48372; &#54925;&#46301;<a class="anchor-link" href="#https://finance.naver.com/sise/-&#50640;&#49436;-&#51221;&#48372;-&#54925;&#46301;">&#182;</a></h3>
+<h3 id="&#51221;&#48372;-&#44032;&#51256;&#50724;&#44592;&#50640;-&#50526;&#49436;-&#54168;&#51060;&#51648;-&#54869;&#51064;&#54644;-&#48372;&#44592;">&#51221;&#48372; &#44032;&#51256;&#50724;&#44592;&#50640; &#50526;&#49436; &#54168;&#51060;&#51648; &#54869;&#51064;&#54644; &#48372;&#44592;<a class="anchor-link" href="#&#51221;&#48372;-&#44032;&#51256;&#50724;&#44592;&#50640;-&#50526;&#49436;-&#54168;&#51060;&#51648;-&#54869;&#51064;&#54644;-&#48372;&#44592;">&#182;</a></h3>
+<pre><code>https://finance.naver.com/robots.txt
+
+User-agent: *
+Disallow: /
+User-agent: yeti
+Disallow: /
+Allow: /sise/
+Allow: /research/
+Allow: /marketindex/
+Allow: /fund/
+Disallow : /fund/news/
+Disallow : /marketindex/news/</code></pre>
+
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#44288;&#49900;-&#51333;&#47785;&#51032;-&#51452;&#49885;-&#51221;&#48372;&#47484;-for&#47928;&#51012;-&#51060;&#50857;&#54616;&#50668;-&#44032;&#51256;&#50752;-&#48372;&#44592;">&#44288;&#49900; &#51333;&#47785;&#51032; &#51452;&#49885; &#51221;&#48372;&#47484; for&#47928;&#51012; &#51060;&#50857;&#54616;&#50668; &#44032;&#51256;&#50752; &#48372;&#44592;<a class="anchor-link" href="#&#44288;&#49900;-&#51333;&#47785;&#51032;-&#51452;&#49885;-&#51221;&#48372;&#47484;-for&#47928;&#51012;-&#51060;&#50857;&#54616;&#50668;-&#44032;&#51256;&#50752;-&#48372;&#44592;">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>예외 케이스 <ul>
+<li>태그가 보이지 화면상에서는 보이지 않을 때</li>
+<li>소스 코드 보기를 이용하여 찾는 방법</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## 삼성전자 : 005930</span>
+<span class="c1">## 카카오   : 035720</span>
+<span class="c1">## 유한양행 : 000100</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span>
-<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_stock</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;삼성전자&#39;</span><span class="p">,</span> <span class="s1">&#39;카카오&#39;</span><span class="p">,</span> <span class="s1">&#39;유한양행&#39;</span><span class="p">,</span> <span class="s1">&#39;NAVER&#39;</span><span class="p">]</span>
+<span class="n">my_stock_code</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;005930&#39;</span><span class="p">,</span><span class="s1">&#39;035720&#39;</span><span class="p">,</span> <span class="s1">&#39;000100&#39;</span><span class="p">,</span> <span class="s1">&#39;035420&#39;</span><span class="p">]</span>
 </pre></div>
 
     </div>
@@ -13107,35 +13170,77 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://finance.naver.com/sise/&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">chk_url</span> <span class="o">=</span> <span class="s1">&#39;https://finance.naver.com/item/main.nhn?code=000100&#39;</span>
+<span class="n">page</span> <span class="o">=</span> <span class="n">urlopen</span><span class="p">(</span><span class="n">chk_url</span><span class="p">)</span>
+<span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">page</span><span class="p">,</span> <span class="s1">&#39;lxml&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#51228;&#47785;-&#44032;&#51256;&#50724;&#44592;">&#51228;&#47785; &#44032;&#51256;&#50724;&#44592;<a class="anchor-link" href="#&#51228;&#47785;-&#44032;&#51256;&#50724;&#44592;">&#182;</a></h3>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">page</span> <span class="o">=</span> <span class="n">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-<span class="n">page</span>
-<span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">page</span><span class="p">,</span> <span class="s2">&quot;html.parser&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">soup</span><span class="o">.</span><span class="n">title</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[5]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;title&gt;유한양행 : 네이버 금융&lt;/title&gt;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>먼저 정보가 포함되는 부분에 대한 부분을 찾는다.</li>
+<li>태그가 보이지 않아, 웹 페이지 소스 보기를 통해 원하는 정보를 찾는다.</li>
+<li>정보가 포함된 부분의 class 'no_today'을 검색<ul>
+<li>해당 되는 부분에 우리가 원하는 정보를 가져올 수 있는지 확인한다.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;span&#39;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s1">&#39;KOSDAQ_now&#39;</span><span class="p">)</span>  <span class="c1"># 코스닥</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;no_today&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;span&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;blind&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
 </pre></div>
 
     </div>
@@ -13154,7 +13259,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[&lt;span class=&#34;num &#34; id=&#34;KOSDAQ_now&#34;&gt;674.06&lt;/span&gt;]</pre>
+<pre>&#39;63,900&#39;</pre>
 </div>
 
 </div>
@@ -13168,30 +13273,10 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;span&#39;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s1">&#39;KOSPI_now&#39;</span><span class="p">)</span>   <span class="c1"># 코스피</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">base_url</span> <span class="o">=</span> <span class="s1">&#39;https://finance.naver.com/item/main.nhn?code=&#39;</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[7]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[&lt;span class=&#34;num &#34; id=&#34;KOSPI_now&#34;&gt;2,094.36&lt;/span&gt;]</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -13201,45 +13286,26 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;span&#39;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s1">&#39;KPI200_now&#39;</span><span class="p">)</span>  <span class="c1"># 코스피200 </span>
-</pre></div>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">com</span> <span class="o">=</span> <span class="p">[]</span>    <span class="c1"># 회사명</span>
+<span class="n">price_c</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># 가격</span>
 
-    </div>
-</div>
-</div>
+<span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span>   <span class="c1"># 회사명 선택을 위한 count</span>
+<span class="k">for</span> <span class="n">code</span> <span class="ow">in</span> <span class="n">my_stock_code</span><span class="p">:</span>
+    <span class="n">all_url</span> <span class="o">=</span> <span class="n">base_url</span> <span class="o">+</span> <span class="n">code</span>
+    <span class="n">page</span> <span class="o">=</span> <span class="n">urlopen</span><span class="p">(</span><span class="n">all_url</span><span class="p">)</span>
+    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">page</span><span class="p">,</span> <span class="s1">&#39;lxml&#39;</span><span class="p">)</span>
+    
+    <span class="c1">## 현재가</span>
+    <span class="n">tmp</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;no_today&#39;</span><span class="p">)</span>
+    <span class="n">price</span> <span class="o">=</span> <span class="n">tmp</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;span&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;blind&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[8]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[&lt;span class=&#34;num &#34; id=&#34;KPI200_now&#34;&gt;274.55&lt;/span&gt;]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">kosdaq</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;span&#39;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s1">&#39;KOSDAQ_now&#39;</span><span class="p">)</span> <span class="c1"># 코스닥</span>
-<span class="n">kospi</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;span&#39;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s1">&#39;KOSPI_now&#39;</span><span class="p">)</span>   <span class="c1"># 코스피</span>
-<span class="n">kpi200</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;span&#39;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s1">&#39;KPI200_now&#39;</span><span class="p">)</span>  <span class="c1"># 코스피200 </span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;현재 코스닥지수 : </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">kosdaq</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span> <span class="p">)</span> <span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;현재 코스피지수 : </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">kospi</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span> <span class="p">)</span>  <span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;현재 코스피200지수 : </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">kpi200</span><span class="o">.</span><span class="n">get_text</span><span class="p">())</span> <span class="p">)</span>
+    <span class="n">com</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">my_stock</span><span class="p">[</span><span class="n">cnt</span><span class="p">])</span>
+    <span class="n">price_c</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">price</span><span class="p">)</span>
+    
+    <span class="n">cnt</span> <span class="o">+=</span> <span class="mi">1</span>
+    
+<span class="nb">print</span><span class="p">(</span><span class="n">com</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">price_c</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13256,9 +13322,8 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>현재 코스닥지수 : 674.06
-현재 코스피지수 : 2,094.36
-현재 코스피200지수 : 274.55
+<pre>[&#39;삼성전자&#39;, &#39;카카오&#39;, &#39;유한양행&#39;, &#39;NAVER&#39;]
+[&#39;60,800&#39;, &#39;372,000&#39;, &#39;63,900&#39;, &#39;295,000&#39;]
 </pre>
 </div>
 </div>
@@ -13267,27 +13332,27 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#49892;&#49845;-1">&#49892;&#49845; 1<a class="anchor-link" href="#&#49892;&#49845;-1">&#182;</a></h2><ul>
-<li>코스피의 지수 정보를 가지고 오기.</li>
-<li>거래량(천주)은 정보를 가지고 와 보자.</li>
-<li>장중 최고는 얼마인지 가지고 오자.</li>
-<li>거래대금(백만)의 정보를 가지고 오자.</li>
-<li>장중최저, 52주 최저의 정보를 가지고 오자.</li>
-</ul>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
 
+    </div>
 </div>
 </div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span>
-<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dic_dat</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;회사명&#39;</span><span class="p">:</span><span class="n">com</span><span class="p">,</span> <span class="s1">&#39;주가&#39;</span><span class="p">:</span><span class="n">price_c</span><span class="p">}</span>
+<span class="n">dat</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span> <span class="n">dic_dat</span> <span class="p">)</span>
+<span class="n">dat</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;date_0118.xlsx&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13300,26 +13365,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://finance.naver.com/sise/sise_index.nhn?code=KOSPI&quot;</span>
-<span class="n">page</span> <span class="o">=</span> <span class="n">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-<span class="n">page</span>
-<span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">page</span><span class="p">,</span> <span class="s2">&quot;html.parser&quot;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">quant</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">,</span> <span class="nb">id</span> <span class="o">=</span> <span class="s2">&quot;quant&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>            <span class="c1"># 거래량(천주)</span>
-<span class="n">high_value</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">,</span> <span class="nb">id</span> <span class="o">=</span> <span class="s2">&quot;high_value&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>  <span class="c1"># 장중 최고</span>
-<span class="n">low_value</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">,</span> <span class="nb">id</span> <span class="o">=</span> <span class="s2">&quot;low_value&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>    <span class="c1"># 장중 최저</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">quant</span><span class="p">,</span> <span class="n">high_value</span><span class="p">,</span> <span class="n">low_value</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 파일 생성 확인 (리눅스 환경 !ls, 원도우 !dir로 확인 가능)</span>
+<span class="o">!</span>dir *date*
 </pre></div>
 
     </div>
@@ -13336,148 +13383,16 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>394,904 2,096.73
+<pre> C 드라이브의 볼륨에는 이름이 없습니다.
+ 볼륨 일련 번호: C822-B81C
+
+ C:\Users\user\Documents\GitHub\myrepo2\20201013_class\part02_02_03_예외_stock 디렉터리
+
+2020-10-13  오후 01:32               102 date_0118.xlsx
+               1개 파일                 102 바이트
+               0개 디렉터리  413,817,630,720 바이트 남음
 </pre>
 </div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">info</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s2">&quot;subtop_sise_detail&quot;</span><span class="p">)</span>
-<span class="n">info</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[13]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[&lt;div class=&#34;subtop_sise_detail&#34;&gt;
- &lt;!-- [D] 상승장일때 up, 하락장일때 dn 클래스 추가 (보합시 추가 없음) --&gt;
- &lt;div class=&#34;quotient up&#34; id=&#34;quotient&#34;&gt;
- &lt;em id=&#34;now_value&#34;&gt;2,094.36&lt;/em&gt;
- &lt;span class=&#34;fluc&#34; id=&#34;change_value_and_rate&#34;&gt;&lt;span&gt;27.81&lt;/span&gt; +1.35%&lt;span class=&#34;blind&#34;&gt;상승&lt;/span&gt;&lt;/span&gt;
- &lt;/div&gt;
- &lt;table cellpadding=&#34;0&#34; cellspacing=&#34;0&#34; class=&#34;table_kos_index&#34; summary=&#34;코스피 주요시세 정보에 관한 표입니다.&#34;&gt;
- &lt;caption&gt;코스피 주요시세&lt;/caption&gt;
- &lt;tr&gt;
- &lt;th class=&#34;th&#34;&gt;&lt;span class=&#34;blind&#34;&gt;거래량(천주)&lt;/span&gt;&lt;/th&gt;
- &lt;td class=&#34;td&#34; id=&#34;quant&#34;&gt;394,904&lt;/td&gt;
- &lt;th class=&#34;th2&#34;&gt;&lt;span class=&#34;blind&#34;&gt;거래대금(백만)&lt;/span&gt;&lt;/th&gt;
- &lt;td class=&#34;td2&#34; id=&#34;amount&#34;&gt;4,198,431&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;th&gt;&lt;span class=&#34;blind&#34;&gt;장중최고&lt;/span&gt;&lt;/th&gt;
- &lt;td class=&#34;td&#34; id=&#34;high_value&#34;&gt;2,096.73&lt;/td&gt;
- &lt;th&gt;&lt;span class=&#34;blind&#34;&gt;장중최저&lt;/span&gt;&lt;/th&gt;
- &lt;td class=&#34;td2&#34; id=&#34;low_value&#34;&gt;2,076.51&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;th&gt;&lt;span class=&#34;blind&#34;&gt;52주최고&lt;/span&gt;&lt;/th&gt;
- &lt;td class=&#34;td&#34;&gt;2,356.62&lt;/td&gt;
- &lt;th&gt;&lt;span class=&#34;blind&#34;&gt;52주최저&lt;/span&gt;&lt;/th&gt;
- &lt;td class=&#34;td2&#34;&gt;1,984.53&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;th class=&#34;th&#34;&gt;&lt;span class=&#34;blind&#34;&gt;등락/종목&lt;/span&gt;&lt;/th&gt;
- &lt;td class=&#34;td3&#34; colspan=&#34;3&#34;&gt;
- &lt;ul&gt;
- &lt;li class=&#34;lst&#34;&gt;&lt;span class=&#34;blind&#34;&gt;상한종목수&lt;/span&gt;&lt;a href=&#34;/sise/sise_upper.nhn&#34;&gt;&lt;span&gt;1&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
- &lt;li class=&#34;lst2&#34;&gt;&lt;span class=&#34;blind&#34;&gt;상승종목수&lt;/span&gt;&lt;a href=&#34;/sise/sise_rise.nhn&#34;&gt;&lt;span&gt;661&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
- &lt;li class=&#34;lst3&#34;&gt;&lt;span class=&#34;blind&#34;&gt;보합종목수&lt;/span&gt;&lt;a href=&#34;/sise/sise_steady.nhn&#34;&gt;&lt;span&gt;51&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
- &lt;li class=&#34;lst4&#34;&gt;&lt;span class=&#34;blind&#34;&gt;하락종목수&lt;/span&gt;&lt;a href=&#34;/sise/sise_fall.nhn&#34;&gt;&lt;span&gt;183&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
- &lt;li class=&#34;lst5&#34;&gt;&lt;span class=&#34;blind&#34;&gt;하한종목수&lt;/span&gt;&lt;a href=&#34;/sise/sise_lower.nhn&#34;&gt;&lt;span&gt;0&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
- &lt;/ul&gt;
- &lt;/td&gt;
- &lt;/tr&gt;
- &lt;/table&gt;
- &lt;/div&gt;]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">info</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;td&#39;</span><span class="p">)[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">text</span>  <span class="c1"># 52주 최고</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[20]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;2,356.62&#39;</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">info</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;td2&#39;</span><span class="p">)[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">text</span> <span class="c1"># 52주 최저</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[21]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;1,984.53&#39;</pre>
-</div>
-
 </div>
 
 </div>
