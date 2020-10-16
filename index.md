@@ -1,15 +1,13 @@
 ## Welcome to 우리들의 이야기_1기
 
-You can use the [editor on GitHub](https://github.com/LDJWJ/myrepo2/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+우리는 인공지능을 1기.
 
 ### 이야기 1 : 지도 시각화 - 유용한 정보
 - [연결테스트](https://ldjwj.github.io/myrepo2/test.html)
 - 강릉 관광지()
 - [시간날 때, 자주 가는 곳 추천](https://ldjwj.github.io/myrepo2//map_chae1.html)
-- [경치좋은 다이빙샵](https://ldjwj.github.io/myrepo2//dive.html)
-
+- [경치좋은 다이빙샵](https://ldjwj.github.io/myrepo2/dive.html)
+- [경북김천 가볼만한곳](https://ldjwj.github.io/myrepo2/Gimcheon.html)
 
 ### Markdown
 
