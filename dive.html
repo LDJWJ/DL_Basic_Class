@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_cbbe9e3da7784b8f9e1a94ec3c2ba5e3 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_cbbe9e3da7784b8f9e1a94ec3c2ba5e3" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_cbbe9e3da7784b8f9e1a94ec3c2ba5e3 = L.map(
+        'map_cbbe9e3da7784b8f9e1a94ec3c2ba5e3', {
+        center: [38.296102, 128.549686],
+        zoom: 9,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_fa426b7c4c49442bb1b1bc57c75701cb = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_cbbe9e3da7784b8f9e1a94ec3c2ba5e3);
+    
+        var marker_4c8ee9a1cece4abc9657b2b97e057805 = L.marker(
+            [38.296102, 128.549686],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_cbbe9e3da7784b8f9e1a94ec3c2ba5e3);
+        
+    
+
+                var icon_03d1dfbbe05941508b353c6e087dd3d3 = L.AwesomeMarkers.icon({
+                    icon: 'star',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4c8ee9a1cece4abc9657b2b97e057805.setIcon(icon_03d1dfbbe05941508b353c6e087dd3d3);
+            
+    
+            var popup_72113e42957c481681a0fde4097be7a8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_dd27c5edcaad44c6b0fe41e3c01aa841 = $(`<div id="html_dd27c5edcaad44c6b0fe41e3c01aa841" style="width: 100.0%; height: 100.0%;">Munam Dive Resort</div>`)[0];
+                popup_72113e42957c481681a0fde4097be7a8.setContent(html_dd27c5edcaad44c6b0fe41e3c01aa841);
+            
+
+            marker_4c8ee9a1cece4abc9657b2b97e057805.bindPopup(popup_72113e42957c481681a0fde4097be7a8)
+            ;
+
+            
+        
+    
+        var marker_4536fd72d7a245ebbd1b7534776819de = L.marker(
+            [38.291737, 128.546518],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_cbbe9e3da7784b8f9e1a94ec3c2ba5e3);
+        
+    
+
+                var icon_71abeace86ac4c93b604e2160398bb7b = L.AwesomeMarkers.icon({
+                    icon: 'star',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4536fd72d7a245ebbd1b7534776819de.setIcon(icon_71abeace86ac4c93b604e2160398bb7b);
+            
+    
+            var popup_66d26f2067c94968b295aa84ee14f319 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_87d9d559de92471da7e82f331931f39f = $(`<div id="html_87d9d559de92471da7e82f331931f39f" style="width: 100.0%; height: 100.0%;">Cheonhakjeong Dive Resort</div>`)[0];
+                popup_66d26f2067c94968b295aa84ee14f319.setContent(html_87d9d559de92471da7e82f331931f39f);
+            
+
+            marker_4536fd72d7a245ebbd1b7534776819de.bindPopup(popup_66d26f2067c94968b295aa84ee14f319)
+            ;
+
+            
+        
+    
+        var marker_b20fbe125add458b85dc3db62d834f4c = L.marker(
+            [37.944461, 128.788406],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_cbbe9e3da7784b8f9e1a94ec3c2ba5e3);
+        
+    
+
+                var icon_4a2ab21db15c42bbbd98eb9670a6bee2 = L.AwesomeMarkers.icon({
+                    icon: 'star',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b20fbe125add458b85dc3db62d834f4c.setIcon(icon_4a2ab21db15c42bbbd98eb9670a6bee2);
+            
+    
+            var popup_d118a91fd8174d7f9fc1917c364c2dd2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5fd06d126c884b75a040ab214cccc90d = $(`<div id="html_5fd06d126c884b75a040ab214cccc90d" style="width: 100.0%; height: 100.0%;">Whale Cafe</div>`)[0];
+                popup_d118a91fd8174d7f9fc1917c364c2dd2.setContent(html_5fd06d126c884b75a040ab214cccc90d);
+            
+
+            marker_b20fbe125add458b85dc3db62d834f4c.bindPopup(popup_d118a91fd8174d7f9fc1917c364c2dd2)
+            ;
+
+            
+        
+</script>
