@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_9075c19611544bdb87411a353a0c704a {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_9075c19611544bdb87411a353a0c704a" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_9075c19611544bdb87411a353a0c704a = L.map(
+        'map_9075c19611544bdb87411a353a0c704a', {
+        center: [37.484195, 126.92972],
+        zoom: 17,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_9ab8634adfff4cc290f8542f836fe3bc = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_9075c19611544bdb87411a353a0c704a);
+    
+        var marker_4f1f3d42ca9b4dbbbd75347f06c6ea47 = L.marker(
+            [37.483568, 126.933426],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9075c19611544bdb87411a353a0c704a);
+        
+    
+
+                var icon_50d19f7a0a9a4c7d9364571fcaf5db60 = L.AwesomeMarkers.icon({
+                    icon: 'star',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4f1f3d42ca9b4dbbbd75347f06c6ea47.setIcon(icon_50d19f7a0a9a4c7d9364571fcaf5db60);
+            
+    
+            var popup_a68154a100274f85af5b6c8a86628028 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_215a93a36c6d472bb424ad662615421a = $(`<div id="html_215a93a36c6d472bb424ad662615421a" style="width: 100.0%; height: 100.0%;">Jinook House</div>`)[0];
+                popup_a68154a100274f85af5b6c8a86628028.setContent(html_215a93a36c6d472bb424ad662615421a);
+            
+
+            marker_4f1f3d42ca9b4dbbbd75347f06c6ea47.bindPopup(popup_a68154a100274f85af5b6c8a86628028)
+            ;
+
+            
+        
+    
+        var marker_c28d1d88edf54cd2a17d2c12293bdb34 = L.marker(
+            [37.48214, 126.929705],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9075c19611544bdb87411a353a0c704a);
+        
+    
+
+                var icon_bc53466c42734018bc2e835be69635dc = L.AwesomeMarkers.icon({
+                    icon: 'star',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c28d1d88edf54cd2a17d2c12293bdb34.setIcon(icon_bc53466c42734018bc2e835be69635dc);
+            
+    
+            var popup_c656639576ce40a6907a56e6f690cde4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1f2c4b2d680c46d08f72b1c56ec271b4 = $(`<div id="html_1f2c4b2d680c46d08f72b1c56ec271b4" style="width: 100.0%; height: 100.0%;">Meeting place</div>`)[0];
+                popup_c656639576ce40a6907a56e6f690cde4.setContent(html_1f2c4b2d680c46d08f72b1c56ec271b4);
+            
+
+            marker_c28d1d88edf54cd2a17d2c12293bdb34.bindPopup(popup_c656639576ce40a6907a56e6f690cde4)
+            ;
+
+            
+        
+    
+        var marker_609897e654d2407b8771fb1548601016 = L.marker(
+            [37.483841, 126.928885],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9075c19611544bdb87411a353a0c704a);
+        
+    
+
+                var icon_e070dada47654521a8e04a98e45f9b03 = L.AwesomeMarkers.icon({
+                    icon: 'star',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_609897e654d2407b8771fb1548601016.setIcon(icon_e070dada47654521a8e04a98e45f9b03);
+            
+    
+            var popup_68dc997681564502bb057a1c3e59e220 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e97d68b8e43c44abaf01d18566feefe2 = $(`<div id="html_e97d68b8e43c44abaf01d18566feefe2" style="width: 100.0%; height: 100.0%;">Pizza Refill</div>`)[0];
+                popup_68dc997681564502bb057a1c3e59e220.setContent(html_e97d68b8e43c44abaf01d18566feefe2);
+            
+
+            marker_609897e654d2407b8771fb1548601016.bindPopup(popup_68dc997681564502bb057a1c3e59e220)
+            ;
+
+            
+        
+</script>
