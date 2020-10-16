@@ -1,8 +1,14 @@
-## Welcome to GitHub Pages
+## Welcome to 우리들의 이야기_1기
 
 You can use the [editor on GitHub](https://github.com/LDJWJ/myrepo2/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+
+### 지도 시각화 - 유용한 정보
+- 강릉 관광지()
+- 
+
+
 
 ### Markdown
 
