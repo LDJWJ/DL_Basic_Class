@@ -4,7 +4,8 @@ You can use the [editor on GitHub](https://github.com/LDJWJ/myrepo2/edit/gh-page
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### 지도 시각화 - 유용한 정보
+### 이야기 1 : 지도 시각화 - 유용한 정보
+- 연결(test.html)
 - 강릉 관광지()
 - 
 
