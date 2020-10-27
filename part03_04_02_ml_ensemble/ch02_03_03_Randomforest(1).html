@@ -13250,6 +13250,38 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#52880;&#44544;-&#53076;&#47532;&#50500;-2&#52264;-&#45824;&#54924;-&#45936;&#51060;&#53552;-&#49483;-&#45936;&#51060;&#53552;">&#52880;&#44544; &#53076;&#47532;&#50500; 2&#52264; &#45824;&#54924; &#45936;&#51060;&#53552; &#49483; &#45936;&#51060;&#53552;<a class="anchor-link" href="#&#52880;&#44544;-&#53076;&#47532;&#50500;-2&#52264;-&#45824;&#54924;-&#45936;&#51060;&#53552;-&#49483;-&#45936;&#51060;&#53552;">&#182;</a></h3><ul>
+<li><a href="https://www.kaggle.com/c/2019-2nd-ml-month-with-kakr/data">https://www.kaggle.com/c/2019-2nd-ml-month-with-kakr/data</a></li>
+</ul>
+
+<pre><code>ID : 집을 구분하는 번호
+date : 집을 구매한 날짜
+price : 집의 가격(Target variable)
+bedrooms : 침실의 수
+bathrooms : 화장실의 수
+sqft_living : 주거 공간의 평방 피트(면적)
+sqft_lot : 부지의 평방 피트(면적)
+floors : 집의 층 수
+waterfront : 집의 전방에 강이 흐르는지 유무 (a.k.a. 리버뷰)
+view : 집이 얼마나 좋아 보이는지의 정도
+condition : 집의 전반적인 상태
+grade : King County grading 시스템 기준으로 매긴 집의 등급
+sqft_above : 지하실을 제외한 평방 피트(면적)
+sqft_basement : 지하실의 평방 피트(면적)
+yr_built : 지어진 년도
+yr_renovated : 집을 재건축한 년도
+zipcode : 우편번호
+lat : 위도
+long : 경도
+sqft_living15 : 2015년 기준 주거 공간의 평방 피트(면적, 집을 재건축했다면, 변화가 있을 수 있음)
+sqft_lot15 : 2015년 기준 부지의 평방 피트(면적, 집을 재건축했다면, 변화가 있을 수 있음)</code></pre>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[30]:</div>
@@ -13495,7 +13527,13 @@ memory usage: 2.3+ MB
 <div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">nor_X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#  정규화 데이터 사용</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">nor_X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> 
+                                                    <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="c1"># 정규화 데이터 사용 안함.</span>
+<span class="c1"># X_train, X_test, y_train, y_test = train_test_split(X, y, </span>
+<span class="c1">#                                                    random_state=42)</span>
 </pre></div>
 
     </div>
@@ -14120,6 +14158,30 @@ Wall time: 2.54 s
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#44208;&#44284;">&#44208;&#44284;<a class="anchor-link" href="#&#44208;&#44284;">&#182;</a></h3>
+<pre><code> * 훈련 세트 정확도 : 0.950, 테스트 세트 정확도 : 0.565
+ * 기본 : 주거공간의 면적, 부지의 면적, 집의 층수, 
+ 추가 변수 : 강이 흐르는지 유무(waterfront), 지어진 년도(yr_built)
+ n_estimators : 100
+
+ * 훈련 세트 정확도 : 0.948, 테스트 세트 정확도 : 0.584
+ * 기본 : 주거공간의 면적, 부지의 면적, 집의 층수, 
+ 추가 변수 : 지어진년도(yr_built), 집이 얼마나 좋아 보이는지의 정도(view)
+ n_estimators : 100
+
+
+ * 훈련 세트 정확도 : 0.9816, 테스트 세트 정확도 : 0.8485
+ 기본 : 주거공간의 면적, 부지의 면적, 집의 층수,  
+ 추가 : 'bathrooms', 'floors', 'condition', 'sqft_above', 'sqft_basement',
+   'view', 'grade', 'yr_built', 'yr_renovated', 'lat', 'long', 'waterfront']
+ n_estimators : 100</code></pre>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
