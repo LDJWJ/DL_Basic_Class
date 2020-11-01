@@ -2,9 +2,13 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>ch04_01_02_FE_OneHotEncoding_02</title>
+<title>ch04_01_01_FE_OneHotEncoding_01</title>
 
+<<<<<<< HEAD
+<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ocShpkky7qenISJZSJMyjjXBCRXXmSxiufD5Hkv2vUOJueWZCjA7sbi9STrkE7xHD93Ea0usaVnwkgRDiPL95OkizV-nLsrX2U_zHsNfF-butyBXn7-SXi8DcvOM0xUYfjiVZOdykAFeRyRUMg-5oXg3YQXkiXtNMSBzoPqCA9kOOuX2rCSTKpVm2qWrYmvaatbyG9kQIotfI84GJXm2Gw" charset="UTF-8"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+=======
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
@@ -13077,60 +13081,24 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="One-hot-encoding-&#51221;&#47532;&#54644;&#48372;&#44592;">One-hot encoding &#51221;&#47532;&#54644;&#48372;&#44592;<a class="anchor-link" href="#One-hot-encoding-&#51221;&#47532;&#54644;&#48372;&#44592;">&#182;</a></h2>
+<<<<<<< HEAD
+<h2 id="ch04-&#45936;&#51060;&#53552;-&#54364;&#54788;-&#53945;&#49457;&#44277;&#54617;">ch04 &#45936;&#51060;&#53552; &#54364;&#54788; &#53945;&#49457;&#44277;&#54617;<a class="anchor-link" href="#ch04-&#45936;&#51060;&#53552;-&#54364;&#54788;-&#53945;&#49457;&#44277;&#54617;">&#182;</a></h2><ul>
+<li>One Hot Encoding 이해하기</li>
+=======
+<h2 id="One-Hot-Encoding-&#51060;&#54644;&#54616;&#44592;">One Hot Encoding &#51060;&#54644;&#54616;&#44592;<a class="anchor-link" href="#One-Hot-Encoding-&#51060;&#54644;&#54616;&#44592;">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#54617;&#49845;-&#47785;&#54364;">&#54617;&#49845; &#47785;&#54364;<a class="anchor-link" href="#&#54617;&#49845;-&#47785;&#54364;">&#182;</a></h3><pre>
-가. 정수 인코딩과 원핫 인코딩은 무엇인가?
-나. scikit-learn, Pandas, Keras 라이브러리를 사용하여 파이썬에서 데이터를 레이블 인코딩에 대해 알아본다.
-다. scikit-learn 및 Keras 라이브러리를 사용하여 OneHotEncoding 하는 방법 알아보기
-</pre>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#54617;&#49845;&#45236;&#50857;">&#54617;&#49845;&#45236;&#50857;<a class="anchor-link" href="#&#54617;&#49845;&#45236;&#50857;">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li><ol>
-<li>간단 One-hot encoding 해보기</li>
-</ol>
-</li>
-<li><ol>
-<li>개요</li>
-</ol>
-</li>
-<li><ol>
-<li>One-hot encoding 이란?</li>
-</ol>
-</li>
-<li><ol>
-<li>왜 One-hot encoding를 사용하는가?</li>
-</ol>
-</li>
-<li><ol>
-<li>scikit-learn를 이용한 One-hot encoding 해보기</li>
-</ol>
-</li>
-<li><ol>
-<li>One-hot encoding with Keras (케라스 이용)</li>
-</ol>
-</li>
-<li><ol>
-<li>One-hot encoding with pandas</li>
-</ol>
-</li>
+<h3 id="&#54617;&#49845;-&#45236;&#50857;">&#54617;&#49845; &#45236;&#50857;<a class="anchor-link" href="#&#54617;&#49845;-&#45236;&#50857;">&#182;</a></h3><ul>
+<li>01 용어 이해해 보기</li>
+<li>02 왜 사용하나?</li>
+<li>03 라벨 인코딩, 원핫 인코딩 실습해 보기(1)</li>
+<li>04 라벨 인코딩, 원핫 인코딩 실습해 보기(2)</li>
+<li>05 군집알고리즘 정리해 보기</li>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 </ul>
 
 </div>
@@ -13139,8 +13107,97 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="-01.-&#44592;&#48376;-&#49892;&#49845;---One-hot-encoding-"><font color="blue"> 01. &#44592;&#48376; &#49892;&#49845; - One-hot encoding </font><a class="anchor-link" href="#-01.-&#44592;&#48376;-&#49892;&#49845;---One-hot-encoding-">&#182;</a></h2><pre>
-간단한 데이터를 준비하여, 목표 feature인 'target'를 labelencode 후, 이 후, 결과값을 이용하여 one-hot-encoding를 수행한다.
+<<<<<<< HEAD
+<h2 id="&#54617;&#49845;-&#47785;&#54364;">&#54617;&#49845; &#47785;&#54364;<a class="anchor-link" href="#&#54617;&#49845;-&#47785;&#54364;">&#182;</a></h2><pre>
+A. 연속형, 범주형 feature
+B. 특성공학(feature engineering)
+C. One Hot Encoding은 무엇인가?
+D. Label Encoding에 대해 알아보기
+
+E. 왜 사용할까?
+실습(1)
+실습(2)
+</pre>
+=======
+<h2 id="01-&#50857;&#50612;-&#51060;&#54644;&#54644;&#48372;&#44592;">01 &#50857;&#50612; &#51060;&#54644;&#54644;&#48372;&#44592;<a class="anchor-link" href="#01-&#50857;&#50612;-&#51060;&#54644;&#54644;&#48372;&#44592;">&#182;</a></h2>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="A.-&#50672;&#49549;&#54805;,-&#48276;&#51452;&#54805;-feature">A. &#50672;&#49549;&#54805;, &#48276;&#51452;&#54805; feature<a class="anchor-link" href="#A.-&#50672;&#49549;&#54805;,-&#48276;&#51452;&#54805;-feature">&#182;</a></h3><ul>
+<li>데이터가 실수형 - 연속형 feature</li>
+<li>데이터가 정해진 값 - 범주형 feature, 이산형 feature</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="B.-&#53945;&#49457;-&#44277;&#54617;(feature-engineering)">B. &#53945;&#49457; &#44277;&#54617;(feature engineering)<a class="anchor-link" href="#B.-&#53945;&#49457;-&#44277;&#54617;(feature-engineering)">&#182;</a></h3><ul>
+<li>특정 애플리케이션의 가장 적합한 데이터 표현 찾기</li>
+<li>올바른 데이터 표현은 지도학습 모델에서 적절한 매개변수를 선택하는 것보다 성능에 매우 중요.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="C.-What-is-One-Hot-Encoding?(One-Hot-Encoding&#51008;-&#47924;&#50631;&#51064;&#44032;?)">C. What is One Hot Encoding?(One Hot Encoding&#51008; &#47924;&#50631;&#51064;&#44032;?)<a class="anchor-link" href="#C.-What-is-One-Hot-Encoding?(One-Hot-Encoding&#51008;-&#47924;&#50631;&#51064;&#44032;?)">&#182;</a></h3><p><pre>
+가. One Hot Encoding은 머신러닝 알고리즘에서 더 나은 예측을 위해 제공되는 하나의 과정입니다.
+나. Label Encoding이 범주형 구분을 숫자로 변경하는 것이라면, OneHotEncoding은 
+KR  => ( 1 , 0, 0, 0 )
+US  => ( 0, 1, 0, 0 )
+UK  => ( 0, 0, 1, 0 )
+CN  => ( 0 , 0, 0, 1 ) 
+로 벡터의 요소로 변경하는 것이다.
+</pre></p>
+<ul>
+<li>원핫인코딩을 다른말로 가변수(dummy variable)라고도 한다.</li>
+<li>가변수는 범주형 변수를 0 또는 1값을 하나 이상의 새로운 특성으로 변경한 값이다.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="D.-Label-Encoding&#51012;-&#50508;&#50500;&#48372;&#44592;">D. Label Encoding&#51012; &#50508;&#50500;&#48372;&#44592;<a class="anchor-link" href="#D.-Label-Encoding&#51012;-&#50508;&#50500;&#48372;&#44592;">&#182;</a></h3><ul>
+<li>범주형 문자를 숫자로 변경해 주는 것.<ul>
+<li>국가명이 만약 US, KR, UK, JPN등이라면 이를 숫자로 0,1,2,3로 변경해 준다.</li>
+</ul>
+</li>
+<li>파이썬 라이브러리 sklearn에서 LabelEncoder의 함수를 사용</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="E.-Why-do-you-need-one-hot-encoding?">E. Why do you need one hot encoding?<a class="anchor-link" href="#E.-Why-do-you-need-one-hot-encoding?">&#182;</a></h3><h3 id="(&#50780;-&#54596;&#50836;&#54624;&#44620;?)">(&#50780; &#54596;&#50836;&#54624;&#44620;?)<a class="anchor-link" href="#(&#50780;-&#54596;&#50836;&#54624;&#44620;?)">&#182;</a></h3><ul>
+<li>Label 인코딩에 오류 부분(순서 개념이 있을 수 있음) 보완</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Label-&#51064;&#53076;&#46377;&#51032;-&#50724;&#47448;">Label &#51064;&#53076;&#46377;&#51032; &#50724;&#47448;<a class="anchor-link" href="#Label-&#51064;&#53076;&#46377;&#51032;-&#50724;&#47448;">&#182;</a></h3><h4 id="Label-&#51032;-&#51064;&#53076;&#46377;&#51032;-&#47928;&#51228;&#45716;-&#48276;&#51452;&#44050;&#51060;-&#45458;&#51012;&#49688;&#47197;-&#52852;&#53580;&#44256;&#47532;&#44032;-&#45908;-&#50864;&#49688;&#54616;&#45796;&#44256;-&#44032;&#51221;&#54633;&#45768;&#45796;.">Label &#51032; &#51064;&#53076;&#46377;&#51032; &#47928;&#51228;&#45716; &#48276;&#51452;&#44050;&#51060; &#45458;&#51012;&#49688;&#47197; &#52852;&#53580;&#44256;&#47532;&#44032; &#45908; &#50864;&#49688;&#54616;&#45796;&#44256; &#44032;&#51221;&#54633;&#45768;&#45796;.<a class="anchor-link" href="#Label-&#51032;-&#51064;&#53076;&#46377;&#51032;-&#47928;&#51228;&#45716;-&#48276;&#51452;&#44050;&#51060;-&#45458;&#51012;&#49688;&#47197;-&#52852;&#53580;&#44256;&#47532;&#44032;-&#45908;-&#50864;&#49688;&#54616;&#45796;&#44256;-&#44032;&#51221;&#54633;&#45768;&#45796;.">&#182;</a></h4><pre>
+범주형 값에 의해 가장 가치 있는 모델은
+VW > Acura > Honda이다.
+평균을 계산해서 확인하면 평균은 2이고, 이것이 의미하는 바는 VM와 Honda의 평균은 Acura이다. 
+이 내용은 오류가 발생합니다. 이 값을 가지고 모델을 예측한다는 것은 많은 오류가 있다.
 </pre>
 </div>
 </div>
@@ -13148,22 +13205,38 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#44032;.-&#45936;&#51060;&#53552;-&#51456;&#48708;">&#44032;. &#45936;&#51060;&#53552; &#51456;&#48708;<a class="anchor-link" href="#&#44032;.-&#45936;&#51060;&#53552;-&#51456;&#48708;">&#182;</a></h3>
+<<<<<<< HEAD
+<h3 id="(1)-LabelEncoder,-OneHotEncoder-&#49892;&#49845;">(1) LabelEncoder, OneHotEncoder &#49892;&#49845;<a class="anchor-link" href="#(1)-LabelEncoder,-OneHotEncoder-&#49892;&#49845;">&#182;</a></h3>
+=======
+<h2 id="02-&#50780;-&#49324;&#50857;&#54616;&#45208;?">02 &#50780; &#49324;&#50857;&#54616;&#45208;?<a class="anchor-link" href="#02-&#50780;-&#49324;&#50857;&#54616;&#45208;?">&#182;</a></h2><ul>
+<li>머신러닝이나 딥러닝 적용시에 문자를 이해가 어렵기에 해당 모델에 맞는 형태(숫자나 벡터로)로 만들어주어야 한다.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="03-&#46972;&#48296;-&#51064;&#53076;&#46377;,-&#50896;&#54635;-&#51064;&#53076;&#46377;-&#49892;&#49845;&#54644;-&#48372;&#44592;(1)">03 &#46972;&#48296; &#51064;&#53076;&#46377;, &#50896;&#54635; &#51064;&#53076;&#46377; &#49892;&#49845;&#54644; &#48372;&#44592;(1)<a class="anchor-link" href="#03-&#46972;&#48296;-&#51064;&#53076;&#46377;,-&#50896;&#54635;-&#51064;&#53076;&#46377;-&#49892;&#49845;&#54644;-&#48372;&#44592;(1)">&#182;</a></h2>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<<<<<<< HEAD
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+=======
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### 01. 데이터 준비</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="n">data</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;Value1&quot;</span><span class="p">:[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span>
-         <span class="s2">&quot;Value2&quot;</span><span class="p">:[</span><span class="mi">22</span><span class="p">,</span><span class="mi">32</span><span class="p">,</span><span class="mi">82</span><span class="p">,</span><span class="mi">42</span><span class="p">],</span>
-         <span class="s2">&quot;target&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;b&quot;</span><span class="p">,</span><span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;d&quot;</span><span class="p">]</span>
-       <span class="p">}</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;eng&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;d&quot;</span><span class="p">]</span> <span class="p">}</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">df</span><span class="p">))</span>
 <span class="n">df</span>
 </pre></div>
 
@@ -13177,7 +13250,22 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[1]:</div>
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<<<<<<< HEAD
+    <div class="prompt output_prompt">Out[2]:</div>
+=======
+    <div class="prompt output_prompt">Out[32]:</div>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 
 
 
@@ -13200,34 +13288,24 @@ div#notebook {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>Value1</th>
-      <th>Value2</th>
-      <th>target</th>
+      <th>eng</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>2</td>
-      <td>22</td>
       <td>b</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>3</td>
-      <td>32</td>
       <td>c</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>8</td>
-      <td>82</td>
       <td>a</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>4</td>
-      <td>42</td>
       <td>d</td>
     </tr>
   </tbody>
@@ -13243,10 +13321,14 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<<<<<<< HEAD
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+=======
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">preprocessing</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span><span class="p">,</span> <span class="n">OneHotEncoder</span>
 </pre></div>
 
     </div>
@@ -13257,19 +13339,35 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#45208;.-LabelEncoder&#54616;&#44592;">&#45208;. LabelEncoder&#54616;&#44592;<a class="anchor-link" href="#&#45208;.-LabelEncoder&#54616;&#44592;">&#182;</a></h3><pre>
-a,b,c,d가 숫자 0,1,2,3로 변경
-</pre>
+<<<<<<< HEAD
+<h3 id="LabelEncoder">LabelEncoder<a class="anchor-link" href="#LabelEncoder">&#182;</a></h3>
+=======
+<h3 id="LabelEncoder-&#49324;&#50857;&#54616;&#44592;">LabelEncoder &#49324;&#50857;&#54616;&#44592;<a class="anchor-link" href="#LabelEncoder-&#49324;&#50857;&#54616;&#44592;">&#182;</a></h3><ul>
+<li>LabelEncoder() <ul>
+<li>[].fit_transform([적용할열])</li>
+</ul>
+</li>
+</ul>
+
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<<<<<<< HEAD
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">label_encoder</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">LabelEncoder</span><span class="p">()</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;lbl_en&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">encoder_x</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;lbl_encoder&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">encoder_x</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;eng&#39;</span><span class="p">])</span>
+=======
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">encoder_x</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;라벨인코딩&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">encoder_x</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;eng&#39;</span><span class="p">])</span>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 <span class="n">df</span>
 </pre></div>
 
@@ -13283,7 +13381,11 @@ a,b,c,d가 숫자 0,1,2,3로 변경
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[5]:</div>
+<<<<<<< HEAD
+    <div class="prompt output_prompt">Out[4]:</div>
+=======
+    <div class="prompt output_prompt">Out[34]:</div>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 
 
 
@@ -13306,38 +13408,32 @@ a,b,c,d가 숫자 0,1,2,3로 변경
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>Value1</th>
-      <th>Value2</th>
-      <th>target</th>
-      <th>lbl_en</th>
+      <th>eng</th>
+<<<<<<< HEAD
+      <th>lbl_encoder</th>
+=======
+      <th>라벨인코딩</th>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>2</td>
-      <td>22</td>
       <td>b</td>
       <td>1</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>3</td>
-      <td>32</td>
       <td>c</td>
       <td>2</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>8</td>
-      <td>82</td>
       <td>a</td>
       <td>0</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>4</td>
-      <td>42</td>
       <td>d</td>
       <td>3</td>
     </tr>
@@ -13355,17 +13451,34 @@ a,b,c,d가 숫자 0,1,2,3로 변경
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#45796;.-&#54665;&#47148;&#48320;&#44221;(4X1)">&#45796;. &#54665;&#47148;&#48320;&#44221;(4X1)<a class="anchor-link" href="#&#45796;.-&#54665;&#47148;&#48320;&#44221;(4X1)">&#182;</a></h3>
+<<<<<<< HEAD
+<h3 id="&#45936;&#51060;&#53552;&#47484;-&#54665;&#47148;&#47196;-&#48320;&#44221;">&#45936;&#51060;&#53552;&#47484; &#54665;&#47148;&#47196; &#48320;&#44221;<a class="anchor-link" href="#&#45936;&#51060;&#53552;&#47484;-&#54665;&#47148;&#47196;-&#48320;&#44221;">&#182;</a></h3>
+=======
+<h3 id="&#45936;&#51060;&#53552;&#47484;-&#51204;&#52376;&#47532;">&#45936;&#51060;&#53552;&#47484; &#51204;&#52376;&#47532;<a class="anchor-link" href="#&#45936;&#51060;&#53552;&#47484;-&#51204;&#52376;&#47532;">&#182;</a></h3><ul>
+<li>OneHotEncoder() 적용을 위해 행렬로 변경</li>
+</ul>
+
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<<<<<<< HEAD
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;lbl_en&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
-<span class="n">train_y</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">val</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;lbl_encoder&#39;</span><span class="p">]</span>
+=======
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">val</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;라벨인코딩&#39;</span><span class="p">]</span>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
+<span class="n">new_val</span> <span class="o">=</span> <span class="n">val</span><span class="o">.</span><span class="n">values</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">new_val</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="n">new_val</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">n</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 
     </div>
@@ -13378,16 +13491,28 @@ a,b,c,d가 숫자 0,1,2,3로 변경
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[6]:</div>
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(4,)
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<<<<<<< HEAD
+    <div class="prompt output_prompt">Out[5]:</div>
+=======
+    <div class="prompt output_prompt">Out[35]:</div>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([[1],
-       [2],
-       [0],
-       [3]])</pre>
+<pre>(4, 1)</pre>
 </div>
 
 </div>
@@ -13399,22 +13524,37 @@ a,b,c,d가 숫자 0,1,2,3로 변경
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#46972;.-One-hot-encoding-&#54616;&#44592;">&#46972;. One-hot encoding &#54616;&#44592;<a class="anchor-link" href="#&#46972;.-One-hot-encoding-&#54616;&#44592;">&#182;</a></h3><ul>
-<li>범주형 변수를 one-hot 수치형 배열로 변환</li>
+<<<<<<< HEAD
+<h3 id="OneHotEncoding-&#51201;&#50857;">OneHotEncoding &#51201;&#50857;<a class="anchor-link" href="#OneHotEncoding-&#51201;&#50857;">&#182;</a></h3>
+=======
+<h3 id="&#50896;&#54635;-&#51064;&#53076;&#46377;(OneHotEncoding)-&#49892;&#49845;">&#50896;&#54635; &#51064;&#53076;&#46377;(OneHotEncoding) &#49892;&#49845;<a class="anchor-link" href="#&#50896;&#54635;-&#51064;&#53076;&#46377;(OneHotEncoding)-&#49892;&#49845;">&#182;</a></h3><ul>
+<li>OneHotEncoder() <ul>
+<li>[].fit_transform([적용할열])</li>
+</ul>
+</li>
 </ul>
 
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<<<<<<< HEAD
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">onehot_encoder</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">OneHotEncoder</span><span class="p">(</span><span class="n">sparse</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">train_y_onehot</span> <span class="o">=</span> <span class="n">onehot_encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">train_y</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">train_y_onehot</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">train_y_onehot</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">onehot</span> <span class="o">=</span> <span class="n">OneHotEncoder</span><span class="p">()</span>
+<span class="n">val</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;lbl_encoder&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># Onehot에 적합한 값으로 변경.</span>
+=======
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">onehot</span> <span class="o">=</span> <span class="n">OneHotEncoder</span><span class="p">()</span>
+<span class="n">val</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;라벨인코딩&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># OneHotEncoder()를 사용을 위한 적합한 값으로 변경.</span>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
+<span class="n">y</span> <span class="o">=</span> <span class="n">onehot</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span> <span class="n">val</span> <span class="p">)</span><span class="o">.</span><span class="n">toarray</span><span class="p">()</span>    <span class="c1"># 값을 변경후, 배열로 만들어준다.</span>
+<span class="n">y</span>
 </pre></div>
 
     </div>
@@ -13427,240 +13567,53 @@ a,b,c,d가 숫자 0,1,2,3로 변경
 
 <div class="output_area">
 
+<<<<<<< HEAD
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[[0. 1. 0. 0.]
- [0. 0. 1. 0.]
- [1. 0. 0. 0.]
- [0. 0. 0. 1.]]
-(4, 4)
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\ProgramData\Anaconda3\lib\site-packages\sklearn\preprocessing\_encoders.py:368: FutureWarning: The handling of integer data will change in version 0.22. Currently, the categories are determined based on the range [0, max(values)], while in the future they will be determined based on the unique values.
+If you want the future behaviour and silence this warning, you can specify &#34;categories=&#39;auto&#39;&#34;.
+In case you used a LabelEncoder before this OneHotEncoder to convert the categories to integers, then you can now use the OneHotEncoder directly.
+  warnings.warn(msg, FutureWarning)
 </pre>
 </div>
 </div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#49892;&#49845;">&#49892;&#49845;<a class="anchor-link" href="#&#49892;&#49845;">&#182;</a></h3><ul>
-<li>A. OneHotEncoder의 sparse를 False로 하면 어떤 결과가 나오는가?</li>
-<li>B. 희소 행렬은 무엇을 의미하는가?</li>
-<li>C. 변경한 내용을 기존의 데이터에 붙여보기</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="-02.-&#44060;&#50836;-"><font color="blue"> 02. &#44060;&#50836; </font><a class="anchor-link" href="#-02.-&#44060;&#50836;-">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li><strong>A. 머신러닝 알고리즘은 범주형 데이터에서 직접적으로 작동하지 않는다.</strong></li>
-<li><p><strong>B. 범주형 데이터는 숫자로 변경되어야 함.</strong></p>
-<pre>
-Categorical data must be converted to numbers.
-</pre></li>
-<li><p><strong>C. 신경망과 같은 심층적인 학습 방법을 사용할 때 적용.</strong></p>
-<pre>
-This applies when you are working with a sequence classification type problem and plan on using deep learning methods such as Long Short-Term Memory recurrent neural networks.
-</pre></li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="-03.-One-hot-encoding&#51060;&#46976;?-"><font color="blue"> 03. One-hot encoding&#51060;&#46976;? </font><a class="anchor-link" href="#-03.-One-hot-encoding&#51060;&#46976;?-">&#182;</a></h2><p><pre></p>
-<ul>
-<li>가. One-Hot Encoding은 범주형 변수를 바이너리벡터(0,1)로 표현한 것.
-나. 작업 절차는 
-  A. 범주형 변수는 정수값으로 변경되어야 하고,
-  B. 각각의 정수값은 <b>해당되는 위치에 1로 표시</b>되고 나머지는 0으로 표시.
-&lt;/pre&gt;
-<img src="img/onehotencoding.png" ></li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>'red', 'red', 'blue', 'green'</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="&#51221;&#49688;&#47196;-encoding&#54616;&#44592;-(&#51221;&#48372;&#51032;-&#54805;&#53468;&#45208;-&#54805;&#49885;&#51012;-&#48320;&#54872;&#54616;&#45716;-&#52376;&#47532;&#48169;&#49885;)">&#51221;&#49688;&#47196; encoding&#54616;&#44592; (&#51221;&#48372;&#51032; &#54805;&#53468;&#45208; &#54805;&#49885;&#51012; &#48320;&#54872;&#54616;&#45716; &#52376;&#47532;&#48169;&#49885;)<a class="anchor-link" href="#&#51221;&#49688;&#47196;-encoding&#54616;&#44592;-(&#51221;&#48372;&#51032;-&#54805;&#53468;&#45208;-&#54805;&#49885;&#51012;-&#48320;&#54872;&#54616;&#45716;-&#52376;&#47532;&#48169;&#49885;)">&#182;</a></h4><p>0,0,1,2</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="one-hot-encoding&#54616;&#44592;">one hot encoding&#54616;&#44592;<a class="anchor-link" href="#one-hot-encoding&#54616;&#44592;">&#182;</a></h3><pre>
-[1,0,0]
-[1,0,0]
-[0,1,0]
-[0,0,1]
-</pre>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#49892;&#49845;-1">&#49892;&#49845; 1<a class="anchor-link" href="#&#49892;&#49845;-1">&#182;</a></h3><pre>
-spring, summer, autumn, winter을 레이블 인코딩, OneHotEncoding를 해보자.
-</pre>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="-04.-&#50780;-One-hot-encoding&#47484;-&#49324;&#50857;&#54616;&#45716;&#44032;?-"><font color="blue"> 04. &#50780; One-hot encoding&#47484; &#49324;&#50857;&#54616;&#45716;&#44032;? </font><a class="anchor-link" href="#-04.-&#50780;-One-hot-encoding&#47484;-&#49324;&#50857;&#54616;&#45716;&#44032;?-">&#182;</a></h2><pre>
-가. 범주형 데이터를 숫자로 변경합니다. 단 이 데이터는 자연스러운 순서가 있다. 
-    하지만 순서가 없을 경우, 문제가 될 수 있습니다.
-    (dog, cat, bird..)
-나. 이 경우, 좀 더 표현력이 있는 One-hot encoding 방법을 이용하면 더 정밀한 예측을 가능하게 된다.
-</pre>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="-05.-scikit-learn&#47484;-&#51060;&#50857;&#54620;-One-Hot-Encoding"><font color="blue"> 05. scikit-learn&#47484; &#51060;&#50857;&#54620; One-Hot Encoding</font><a class="anchor-link" href="#-05.-scikit-learn&#47484;-&#51060;&#50857;&#54620;-One-Hot-Encoding">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#44032;.-&#50864;&#47532;&#45716;-4&#44060;&#51032;-&#47112;&#51060;&#48660;&#51012;-&#44032;&#51648;&#44256;-&#51080;&#45796;.">&#44032;. &#50864;&#47532;&#45716; 4&#44060;&#51032; &#47112;&#51060;&#48660;&#51012; &#44032;&#51648;&#44256; &#51080;&#45796;.<a class="anchor-link" href="#&#44032;.-&#50864;&#47532;&#45716;-4&#44060;&#51032;-&#47112;&#51060;&#48660;&#51012;-&#44032;&#51648;&#44256;-&#51080;&#45796;.">&#182;</a></h3><pre>
-'spring', 'summer', 'autumn', 'winter'
-We will assume the case where you have an output sequence of the labels
-</pre><h3 id="&#45208;.-10&#44060;&#51032;-&#45936;&#51060;&#53552;&#47484;-&#44032;&#51648;&#44256;-&#51080;&#45796;.">&#45208;. 10&#44060;&#51032; &#45936;&#51060;&#53552;&#47484; &#44032;&#51648;&#44256; &#51080;&#45796;.<a class="anchor-link" href="#&#45208;.-10&#44060;&#51032;-&#45936;&#51060;&#53552;&#47484;-&#44032;&#51648;&#44256;-&#51080;&#45796;.">&#182;</a></h3><pre>
-spring, spring, summer, spring, autumn, autumn, winter, spring, summer, autumn
-</pre><h3 id="&#45796;.-scikit-learn-&#46972;&#51060;&#48652;&#47084;&#47532;(library)&#47484;-&#51060;&#50857;">&#45796;. scikit-learn &#46972;&#51060;&#48652;&#47084;&#47532;(library)&#47484; &#51060;&#50857;<a class="anchor-link" href="#&#45796;.-scikit-learn-&#46972;&#51060;&#48652;&#47084;&#47532;(library)&#47484;-&#51060;&#50857;">&#182;</a></h3><pre>
-LabelEncoder : label를 정수값으로 변경
-OneHotEncoder : 정수로 인코딩된 값을 One Hot Encode로 만든다.
-</pre>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">array</span>
-<span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">argmax</span>
-<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span>
-<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">OneHotEncoder</span>
-
-<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;spring&#39;</span><span class="p">,</span> <span class="s1">&#39;spring&#39;</span><span class="p">,</span> <span class="s1">&#39;summer&#39;</span><span class="p">,</span> <span class="s1">&#39;spring&#39;</span><span class="p">,</span> <span class="s1">&#39;autumn&#39;</span><span class="p">,</span> 
-        <span class="s1">&#39;autumn&#39;</span><span class="p">,</span> <span class="s1">&#39;winter&#39;</span><span class="p">,</span> <span class="s1">&#39;spring&#39;</span><span class="p">,</span> <span class="s1">&#39;summer&#39;</span><span class="p">,</span> <span class="s1">&#39;autumn&#39;</span><span class="p">]</span>
-<span class="n">values</span> <span class="o">=</span> <span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
-
-<span class="c1"># integer encode</span>
-<span class="n">label_encoder</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
-<span class="n">integer_encoded</span> <span class="o">=</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">integer_encoded</span><span class="p">)</span>
-
-<span class="c1"># binary encode</span>
-<span class="n">onehot_encoder</span> <span class="o">=</span> <span class="n">OneHotEncoder</span><span class="p">(</span><span class="n">sparse</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">integer_encoded</span> <span class="o">=</span> <span class="n">integer_encoded</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">integer_encoded</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>   
-<span class="n">onehot_encoded</span> <span class="o">=</span> <span class="n">onehot_encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">integer_encoded</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">onehot_encoded</span><span class="p">)</span>
-
-<span class="c1"># LabelEncoder에 입력하여 역변환 4번째 행의 값을 되돌리기</span>
-<span class="n">inverted</span> <span class="o">=</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">([</span><span class="n">argmax</span><span class="p">(</span><span class="n">onehot_encoded</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="p">:])])</span>   
-<span class="nb">print</span><span class="p">(</span><span class="n">inverted</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
 
 <div class="output_area">
 
-    <div class="prompt"></div>
+    <div class="prompt output_prompt">Out[9]:</div>
+=======
+    <div class="prompt output_prompt">Out[36]:</div>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;spring&#39; &#39;spring&#39; &#39;summer&#39; &#39;spring&#39; &#39;autumn&#39; &#39;autumn&#39; &#39;winter&#39; &#39;spring&#39;
- &#39;summer&#39; &#39;autumn&#39;]
-[1 1 2 1 0 0 3 1 2 0]
-[[0. 1. 0. 0.]
- [0. 1. 0. 0.]
- [0. 0. 1. 0.]
- [0. 1. 0. 0.]
- [1. 0. 0. 0.]
- [1. 0. 0. 0.]
- [0. 0. 0. 1.]
- [0. 1. 0. 0.]
- [0. 0. 1. 0.]
- [1. 0. 0. 0.]]
-[&#39;autumn&#39;]
-</pre>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[0., 1., 0., 0.],
+       [0., 0., 1., 0.],
+       [1., 0., 0., 0.],
+       [0., 0., 0., 1.]])</pre>
 </div>
+
 </div>
 
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="-06.-One-Hot-Encode-with-Keras-"><font color="blue"> 06. One Hot Encode with Keras </font><a class="anchor-link" href="#-06.-One-Hot-Encode-with-Keras-">&#182;</a></h2><pre>
-케라스에서는 one hot encode를 위해 to_categorical() 함수를 제공한다.
-</pre>
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
+<<<<<<< HEAD
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
+=======
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">array</span>
-<span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">argmax</span>
-<span class="kn">from</span> <span class="nn">keras.utils</span> <span class="kn">import</span> <span class="n">to_categorical</span>
-<span class="c1"># define example</span>
-<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
-<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">15</span><span class="p">,</span><span class="mi">17</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-
-<span class="c1"># one hot encode</span>
-<span class="n">encoded</span> <span class="o">=</span> <span class="n">to_categorical</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">encoded</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">onehot_val</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+<span class="n">onehot_val</span>
 </pre></div>
 
     </div>
@@ -13671,302 +13624,526 @@ OneHotEncoder : 정수로 인코딩된 값을 One Hot Encode로 만든다.
 <div class="output">
 
 
+<div class="output_area">
+
+<<<<<<< HEAD
+    <div class="prompt output_prompt">Out[10]:</div>
+=======
+    <div class="prompt output_prompt">Out[37]:</div>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<<<<<<< HEAD
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+=======
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_new</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df</span><span class="p">,</span> <span class="n">onehot_val</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">df_new</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<<<<<<< HEAD
+    <div class="prompt output_prompt">Out[11]:</div>
+=======
+    <div class="prompt output_prompt">Out[38]:</div>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>eng</th>
+<<<<<<< HEAD
+      <th>lbl_encoder</th>
+=======
+      <th>라벨인코딩</th>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>b</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>c</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>a</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>d</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<<<<<<< HEAD
+<h3 id="(2)-OneHotEncoding,-LabelEncoding-&#49892;&#49845;2">(2) OneHotEncoding, LabelEncoding &#49892;&#49845;2<a class="anchor-link" href="#(2)-OneHotEncoding,-LabelEncoding-&#49892;&#49845;2">&#182;</a></h3>
+=======
+<h2 id="04-&#46972;&#48296;-&#51064;&#53076;&#46377;,-&#50896;&#54635;-&#51064;&#53076;&#46377;-&#49892;&#49845;&#54644;-&#48372;&#44592;(2)">04 &#46972;&#48296; &#51064;&#53076;&#46377;, &#50896;&#54635; &#51064;&#53076;&#46377; &#49892;&#49845;&#54644; &#48372;&#44592;(2)<a class="anchor-link" href="#04-&#46972;&#48296;-&#51064;&#53076;&#46377;,-&#50896;&#54635;-&#51064;&#53076;&#46377;-&#49892;&#49845;&#54644;-&#48372;&#44592;(2)">&#182;</a></h2>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<<<<<<< HEAD
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+=======
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;companyName&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;MS&quot;</span><span class="p">,</span><span class="s2">&quot;Apple&quot;</span><span class="p">,</span> <span class="s2">&quot;Google&quot;</span><span class="p">,</span> <span class="s2">&quot;Google&quot;</span><span class="p">]}</span>
+<span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="n">df2</span> <span class="o">=</span> <span class="n">df1</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">df2</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<<<<<<< HEAD
+    <div class="prompt output_prompt">Out[12]:</div>
+=======
+    <div class="prompt output_prompt">Out[39]:</div>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>companyName</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>MS</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Apple</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Google</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Google</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<<<<<<< HEAD
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+=======
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">values</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<<<<<<< HEAD
+    <div class="prompt output_prompt">Out[13]:</div>
+=======
+    <div class="prompt output_prompt">Out[40]:</div>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[&#39;MS&#39;],
+       [&#39;Apple&#39;],
+       [&#39;Google&#39;],
+       [&#39;Google&#39;]], dtype=object)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<<<<<<< HEAD
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+=======
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### OneHotEncoding</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span><span class="p">,</span> <span class="n">OneHotEncoder</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<<<<<<< HEAD
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+=======
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### LabelEncoder</span>
+<span class="n">df1_val</span> <span class="o">=</span> <span class="n">df1</span><span class="o">.</span><span class="n">values</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;데이터 값 (x) :&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df1_val</span><span class="p">)</span>
+<span class="n">encoder_x</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+<span class="n">df1</span><span class="p">[</span><span class="s1">&#39;encoding&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">encoder_x</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df1</span><span class="p">[</span><span class="s1">&#39;companyName&#39;</span><span class="p">])</span>  <span class="c1"># </span>
+<span class="n">df1</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>데이터 값 (x) :
+[[&#39;MS&#39;]
+ [&#39;Apple&#39;]
+ [&#39;Google&#39;]
+ [&#39;Google&#39;]]
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<<<<<<< HEAD
+    <div class="prompt output_prompt">Out[15]:</div>
+=======
+    <div class="prompt output_prompt">Out[42]:</div>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>companyName</th>
+      <th>encoding</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>MS</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Apple</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Google</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Google</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<<<<<<< HEAD
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+=======
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## OneHotEncoder</span>
+<span class="n">val_label</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;encoding&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">val_label</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+<span class="n">onehot</span> <span class="o">=</span> <span class="n">OneHotEncoder</span><span class="p">()</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">onehot</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">val_label</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="p">)</span><span class="o">.</span><span class="n">toarray</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[2 0 1 1]
+[[0. 0. 1.]
+ [1. 0. 0.]
+ [0. 1. 0.]
+ [0. 1. 0.]]
+</pre>
+</div>
+</div>
+
+<<<<<<< HEAD
 <div class="output_area">
 
     <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>Using TensorFlow backend.
+<pre>C:\ProgramData\Anaconda3\lib\site-packages\sklearn\preprocessing\_encoders.py:368: FutureWarning: The handling of integer data will change in version 0.22. Currently, the categories are determined based on the range [0, max(values)], while in the future they will be determined based on the unique values.
+If you want the future behaviour and silence this warning, you can specify &#34;categories=&#39;auto&#39;&#34;.
+In case you used a LabelEncoder before this OneHotEncoder to convert the categories to integers, then you can now use the OneHotEncoder directly.
+  warnings.warn(msg, FutureWarning)
 </pre>
 </div>
 </div>
 
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[15 17  5 10  0]
-[[0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
- [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
- [0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
- [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]
- [1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
-</pre>
-</div>
-</div>
-
+=======
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">encoded</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[11]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0.,
-       0.], dtype=float32)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># invert encoding</span>
-<span class="n">inverted</span> <span class="o">=</span> <span class="n">argmax</span><span class="p">(</span><span class="n">encoded</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">inverted</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>17
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#49892;&#49845;-2(scikit)">&#49892;&#49845; 2(scikit)<a class="anchor-link" href="#&#49892;&#49845;-2(scikit)">&#182;</a></h3><pre>
-집을 선택할 때, 다음과 같은 유형의 조건이 있다.
-Inside, Corner, FR2, CulDSac 이에 대한 정보를 레이블 인코딩, OneHotEncoding를 해보자.
-</pre><h3 id="&#49892;&#49845;-3-(keras)">&#49892;&#49845; 3 (keras)<a class="anchor-link" href="#&#49892;&#49845;-3-(keras)">&#182;</a></h3><pre>
-Inside, Corner, FR2, CulDSac 이에 대한 정보를 레이블 인코딩, OneHotEncoding를 해보자.
-</pre>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="-07.-One-Hot-Encode-with-Pandas-"><font color="blue"> 07. One Hot Encode with Pandas </font><a class="anchor-link" href="#-07.-One-Hot-Encode-with-Pandas-">&#182;</a></h2><pre>
-판다스에서는 one hot encode를 위해 get_dummies() 함수를 제공한다.
-</pre>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">os</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">demo_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;범주형_feature&quot;</span><span class="p">:[</span><span class="s1">&#39;양말&#39;</span><span class="p">,</span> <span class="s1">&#39;여우&#39;</span><span class="p">,</span> <span class="s1">&#39;양말&#39;</span><span class="p">,</span> <span class="s1">&#39;상자&#39;</span><span class="p">]})</span>
-<span class="n">display</span><span class="p">(</span><span class="n">demo_df</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-<div class="output_html rendered_html output_subarea ">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>범주형_feature</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>양말</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>여우</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>양말</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>상자</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">onehot</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">demo_df</span><span class="p">)</span>
-<span class="n">onehot</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[16]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>범주형_feature_상자</th>
-      <th>범주형_feature_양말</th>
-      <th>범주형_feature_여우</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+<<<<<<< HEAD
 <div class="prompt input_prompt">In&nbsp;[17]:</div>
+=======
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">demo_df</span><span class="p">,</span> <span class="n">onehot</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">df</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 변경된 값을 DataFrame형태로 변경</span>
+<span class="n">dx</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+<span class="n">dx</span>
 </pre></div>
 
     </div>
@@ -13979,7 +14156,11 @@ Inside, Corner, FR2, CulDSac 이에 대한 정보를 레이블 인코딩, OneHot
 
 <div class="output_area">
 
+<<<<<<< HEAD
     <div class="prompt output_prompt">Out[17]:</div>
+=======
+    <div class="prompt output_prompt">Out[44]:</div>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 
 
 
@@ -14002,39 +14183,34 @@ Inside, Corner, FR2, CulDSac 이에 대한 정보를 레이블 인코딩, OneHot
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>범주형_feature</th>
-      <th>범주형_feature_상자</th>
-      <th>범주형_feature_양말</th>
-      <th>범주형_feature_여우</th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>양말</td>
+      <td>0</td>
       <td>0</td>
       <td>1</td>
-      <td>0</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>여우</td>
-      <td>0</td>
-      <td>0</td>
       <td>1</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>양말</td>
       <td>0</td>
       <td>1</td>
       <td>0</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>상자</td>
-      <td>1</td>
       <td>0</td>
+      <td>1</td>
       <td>0</td>
     </tr>
   </tbody>
@@ -14048,6 +14224,143 @@ Inside, Corner, FR2, CulDSac 이에 대한 정보를 레이블 인코딩, OneHot
 </div>
 
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<<<<<<< HEAD
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+=======
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1_new</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df1</span><span class="p">,</span> <span class="n">dx</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">df1_new</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<<<<<<< HEAD
+    <div class="prompt output_prompt">Out[18]:</div>
+=======
+    <div class="prompt output_prompt">Out[45]:</div>
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>companyName</th>
+      <th>encoding</th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>MS</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Apple</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Google</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Google</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#44284;&#51228;">&#44284;&#51228;<a class="anchor-link" href="#&#44284;&#51228;">&#182;</a></h3><ul>
+<li>내가 좋아하는 과일을 딕셔너리 형태로 만들고, 이를 원핫 인코딩으로 만들어 보자.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="History">History<a class="anchor-link" href="#History">&#182;</a></h3><ul>
+<li>ver 1.00  2020-05 update</li>
+</ul>
+
+</div>
+</div>
+</div>
+<<<<<<< HEAD
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+=======
+>>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
     </div>
   </div>
 </body>
