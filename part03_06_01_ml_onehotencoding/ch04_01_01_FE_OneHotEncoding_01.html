@@ -4,11 +4,7 @@
 
 <title>ch04_01_01_FE_OneHotEncoding_01</title>
 
-<<<<<<< HEAD
-<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ocShpkky7qenISJZSJMyjjXBCRXXmSxiufD5Hkv2vUOJueWZCjA7sbi9STrkE7xHD93Ea0usaVnwkgRDiPL95OkizV-nLsrX2U_zHsNfF-butyBXn7-SXi8DcvOM0xUYfjiVZOdykAFeRyRUMg-5oXg3YQXkiXtNMSBzoPqCA9kOOuX2rCSTKpVm2qWrYmvaatbyG9kQIotfI84GJXm2Gw" charset="UTF-8"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
-=======
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
@@ -13081,11 +13077,10 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<<<<<<< HEAD
 <h2 id="ch04-&#45936;&#51060;&#53552;-&#54364;&#54788;-&#53945;&#49457;&#44277;&#54617;">ch04 &#45936;&#51060;&#53552; &#54364;&#54788; &#53945;&#49457;&#44277;&#54617;<a class="anchor-link" href="#ch04-&#45936;&#51060;&#53552;-&#54364;&#54788;-&#53945;&#49457;&#44277;&#54617;">&#182;</a></h2><ul>
 <li>One Hot Encoding 이해하기</li>
-=======
-<h2 id="One-Hot-Encoding-&#51060;&#54644;&#54616;&#44592;">One Hot Encoding &#51060;&#54644;&#54616;&#44592;<a class="anchor-link" href="#One-Hot-Encoding-&#51060;&#54644;&#54616;&#44592;">&#182;</a></h2>
+</ul>
+
 </div>
 </div>
 </div>
@@ -13098,7 +13093,6 @@ div#notebook {
 <li>03 라벨 인코딩, 원핫 인코딩 실습해 보기(1)</li>
 <li>04 라벨 인코딩, 원핫 인코딩 실습해 보기(2)</li>
 <li>05 군집알고리즘 정리해 보기</li>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 </ul>
 
 </div>
@@ -13107,20 +13101,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<<<<<<< HEAD
-<h2 id="&#54617;&#49845;-&#47785;&#54364;">&#54617;&#49845; &#47785;&#54364;<a class="anchor-link" href="#&#54617;&#49845;-&#47785;&#54364;">&#182;</a></h2><pre>
-A. 연속형, 범주형 feature
-B. 특성공학(feature engineering)
-C. One Hot Encoding은 무엇인가?
-D. Label Encoding에 대해 알아보기
-
-E. 왜 사용할까?
-실습(1)
-실습(2)
-</pre>
-=======
 <h2 id="01-&#50857;&#50612;-&#51060;&#54644;&#54644;&#48372;&#44592;">01 &#50857;&#50612; &#51060;&#54644;&#54644;&#48372;&#44592;<a class="anchor-link" href="#01-&#50857;&#50612;-&#51060;&#54644;&#54644;&#48372;&#44592;">&#182;</a></h2>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 </div>
 </div>
 </div>
@@ -13205,9 +13186,6 @@ VW > Acura > Honda이다.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<<<<<<< HEAD
-<h3 id="(1)-LabelEncoder,-OneHotEncoder-&#49892;&#49845;">(1) LabelEncoder, OneHotEncoder &#49892;&#49845;<a class="anchor-link" href="#(1)-LabelEncoder,-OneHotEncoder-&#49892;&#49845;">&#182;</a></h3>
-=======
 <h2 id="02-&#50780;-&#49324;&#50857;&#54616;&#45208;?">02 &#50780; &#49324;&#50857;&#54616;&#45208;?<a class="anchor-link" href="#02-&#50780;-&#49324;&#50857;&#54616;&#45208;?">&#182;</a></h2><ul>
 <li>머신러닝이나 딥러닝 적용시에 문자를 이해가 어렵기에 해당 모델에 맞는 형태(숫자나 벡터로)로 만들어주어야 한다.</li>
 </ul>
@@ -13219,17 +13197,12 @@ VW > Acura > Honda이다.
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="03-&#46972;&#48296;-&#51064;&#53076;&#46377;,-&#50896;&#54635;-&#51064;&#53076;&#46377;-&#49892;&#49845;&#54644;-&#48372;&#44592;(1)">03 &#46972;&#48296; &#51064;&#53076;&#46377;, &#50896;&#54635; &#51064;&#53076;&#46377; &#49892;&#49845;&#54644; &#48372;&#44592;(1)<a class="anchor-link" href="#03-&#46972;&#48296;-&#51064;&#53076;&#46377;,-&#50896;&#54635;-&#51064;&#53076;&#46377;-&#49892;&#49845;&#54644;-&#48372;&#44592;(1)">&#182;</a></h2>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<<<<<<< HEAD
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-=======
 <div class="prompt input_prompt">In&nbsp;[32]:</div>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### 01. 데이터 준비</span>
@@ -13261,11 +13234,7 @@ VW > Acura > Honda이다.
 
 <div class="output_area">
 
-<<<<<<< HEAD
-    <div class="prompt output_prompt">Out[2]:</div>
-=======
     <div class="prompt output_prompt">Out[32]:</div>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 
 
 
@@ -13321,11 +13290,7 @@ VW > Acura > Honda이다.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<<<<<<< HEAD
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-=======
 <div class="prompt input_prompt">In&nbsp;[33]:</div>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span><span class="p">,</span> <span class="n">OneHotEncoder</span>
@@ -13339,9 +13304,6 @@ VW > Acura > Honda이다.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<<<<<<< HEAD
-<h3 id="LabelEncoder">LabelEncoder<a class="anchor-link" href="#LabelEncoder">&#182;</a></h3>
-=======
 <h3 id="LabelEncoder-&#49324;&#50857;&#54616;&#44592;">LabelEncoder &#49324;&#50857;&#54616;&#44592;<a class="anchor-link" href="#LabelEncoder-&#49324;&#50857;&#54616;&#44592;">&#182;</a></h3><ul>
 <li>LabelEncoder() <ul>
 <li>[].fit_transform([적용할열])</li>
@@ -13349,25 +13311,16 @@ VW > Acura > Honda이다.
 </li>
 </ul>
 
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<<<<<<< HEAD
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">encoder_x</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;lbl_encoder&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">encoder_x</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;eng&#39;</span><span class="p">])</span>
-=======
 <div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">encoder_x</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">&#39;라벨인코딩&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">encoder_x</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;eng&#39;</span><span class="p">])</span>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 <span class="n">df</span>
 </pre></div>
 
@@ -13381,11 +13334,7 @@ VW > Acura > Honda이다.
 
 <div class="output_area">
 
-<<<<<<< HEAD
-    <div class="prompt output_prompt">Out[4]:</div>
-=======
     <div class="prompt output_prompt">Out[34]:</div>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 
 
 
@@ -13409,11 +13358,7 @@ VW > Acura > Honda이다.
     <tr style="text-align: right;">
       <th></th>
       <th>eng</th>
-<<<<<<< HEAD
-      <th>lbl_encoder</th>
-=======
       <th>라벨인코딩</th>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
     </tr>
   </thead>
   <tbody>
@@ -13451,30 +13396,19 @@ VW > Acura > Honda이다.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<<<<<<< HEAD
-<h3 id="&#45936;&#51060;&#53552;&#47484;-&#54665;&#47148;&#47196;-&#48320;&#44221;">&#45936;&#51060;&#53552;&#47484; &#54665;&#47148;&#47196; &#48320;&#44221;<a class="anchor-link" href="#&#45936;&#51060;&#53552;&#47484;-&#54665;&#47148;&#47196;-&#48320;&#44221;">&#182;</a></h3>
-=======
 <h3 id="&#45936;&#51060;&#53552;&#47484;-&#51204;&#52376;&#47532;">&#45936;&#51060;&#53552;&#47484; &#51204;&#52376;&#47532;<a class="anchor-link" href="#&#45936;&#51060;&#53552;&#47484;-&#51204;&#52376;&#47532;">&#182;</a></h3><ul>
 <li>OneHotEncoder() 적용을 위해 행렬로 변경</li>
 </ul>
 
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<<<<<<< HEAD
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">val</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;lbl_encoder&#39;</span><span class="p">]</span>
-=======
 <div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">val</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;라벨인코딩&#39;</span><span class="p">]</span>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 <span class="n">new_val</span> <span class="o">=</span> <span class="n">val</span><span class="o">.</span><span class="n">values</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">new_val</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 <span class="n">n</span> <span class="o">=</span> <span class="n">new_val</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
@@ -13502,11 +13436,7 @@ VW > Acura > Honda이다.
 
 <div class="output_area">
 
-<<<<<<< HEAD
-    <div class="prompt output_prompt">Out[5]:</div>
-=======
     <div class="prompt output_prompt">Out[35]:</div>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 
 
 
@@ -13524,9 +13454,6 @@ VW > Acura > Honda이다.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<<<<<<< HEAD
-<h3 id="OneHotEncoding-&#51201;&#50857;">OneHotEncoding &#51201;&#50857;<a class="anchor-link" href="#OneHotEncoding-&#51201;&#50857;">&#182;</a></h3>
-=======
 <h3 id="&#50896;&#54635;-&#51064;&#53076;&#46377;(OneHotEncoding)-&#49892;&#49845;">&#50896;&#54635; &#51064;&#53076;&#46377;(OneHotEncoding) &#49892;&#49845;<a class="anchor-link" href="#&#50896;&#54635;-&#51064;&#53076;&#46377;(OneHotEncoding)-&#49892;&#49845;">&#182;</a></h3><ul>
 <li>OneHotEncoder() <ul>
 <li>[].fit_transform([적용할열])</li>
@@ -13534,25 +13461,16 @@ VW > Acura > Honda이다.
 </li>
 </ul>
 
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<<<<<<< HEAD
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">onehot</span> <span class="o">=</span> <span class="n">OneHotEncoder</span><span class="p">()</span>
-<span class="n">val</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;lbl_encoder&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># Onehot에 적합한 값으로 변경.</span>
-=======
 <div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">onehot</span> <span class="o">=</span> <span class="n">OneHotEncoder</span><span class="p">()</span>
 <span class="n">val</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;라벨인코딩&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># OneHotEncoder()를 사용을 위한 적합한 값으로 변경.</span>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 <span class="n">y</span> <span class="o">=</span> <span class="n">onehot</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span> <span class="n">val</span> <span class="p">)</span><span class="o">.</span><span class="n">toarray</span><span class="p">()</span>    <span class="c1"># 값을 변경후, 배열로 만들어준다.</span>
 <span class="n">y</span>
 </pre></div>
@@ -13567,25 +13485,7 @@ VW > Acura > Honda이다.
 
 <div class="output_area">
 
-<<<<<<< HEAD
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>C:\ProgramData\Anaconda3\lib\site-packages\sklearn\preprocessing\_encoders.py:368: FutureWarning: The handling of integer data will change in version 0.22. Currently, the categories are determined based on the range [0, max(values)], while in the future they will be determined based on the unique values.
-If you want the future behaviour and silence this warning, you can specify &#34;categories=&#39;auto&#39;&#34;.
-In case you used a LabelEncoder before this OneHotEncoder to convert the categories to integers, then you can now use the OneHotEncoder directly.
-  warnings.warn(msg, FutureWarning)
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[9]:</div>
-=======
     <div class="prompt output_prompt">Out[36]:</div>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 
 
 
@@ -13605,11 +13505,7 @@ In case you used a LabelEncoder before this OneHotEncoder to convert the categor
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<<<<<<< HEAD
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
-=======
 <div class="prompt input_prompt">In&nbsp;[37]:</div>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">onehot_val</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
@@ -13626,11 +13522,7 @@ In case you used a LabelEncoder before this OneHotEncoder to convert the categor
 
 <div class="output_area">
 
-<<<<<<< HEAD
-    <div class="prompt output_prompt">Out[10]:</div>
-=======
     <div class="prompt output_prompt">Out[37]:</div>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 
 
 
@@ -13701,11 +13593,7 @@ In case you used a LabelEncoder before this OneHotEncoder to convert the categor
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<<<<<<< HEAD
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
-=======
 <div class="prompt input_prompt">In&nbsp;[38]:</div>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_new</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df</span><span class="p">,</span> <span class="n">onehot_val</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -13722,11 +13610,7 @@ In case you used a LabelEncoder before this OneHotEncoder to convert the categor
 
 <div class="output_area">
 
-<<<<<<< HEAD
-    <div class="prompt output_prompt">Out[11]:</div>
-=======
     <div class="prompt output_prompt">Out[38]:</div>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 
 
 
@@ -13750,11 +13634,7 @@ In case you used a LabelEncoder before this OneHotEncoder to convert the categor
     <tr style="text-align: right;">
       <th></th>
       <th>eng</th>
-<<<<<<< HEAD
-      <th>lbl_encoder</th>
-=======
       <th>라벨인코딩</th>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
       <th>0</th>
       <th>1</th>
       <th>2</th>
@@ -13812,21 +13692,13 @@ In case you used a LabelEncoder before this OneHotEncoder to convert the categor
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<<<<<<< HEAD
-<h3 id="(2)-OneHotEncoding,-LabelEncoding-&#49892;&#49845;2">(2) OneHotEncoding, LabelEncoding &#49892;&#49845;2<a class="anchor-link" href="#(2)-OneHotEncoding,-LabelEncoding-&#49892;&#49845;2">&#182;</a></h3>
-=======
 <h2 id="04-&#46972;&#48296;-&#51064;&#53076;&#46377;,-&#50896;&#54635;-&#51064;&#53076;&#46377;-&#49892;&#49845;&#54644;-&#48372;&#44592;(2)">04 &#46972;&#48296; &#51064;&#53076;&#46377;, &#50896;&#54635; &#51064;&#53076;&#46377; &#49892;&#49845;&#54644; &#48372;&#44592;(2)<a class="anchor-link" href="#04-&#46972;&#48296;-&#51064;&#53076;&#46377;,-&#50896;&#54635;-&#51064;&#53076;&#46377;-&#49892;&#49845;&#54644;-&#48372;&#44592;(2)">&#182;</a></h2>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<<<<<<< HEAD
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
-=======
 <div class="prompt input_prompt">In&nbsp;[39]:</div>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;companyName&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;MS&quot;</span><span class="p">,</span><span class="s2">&quot;Apple&quot;</span><span class="p">,</span> <span class="s2">&quot;Google&quot;</span><span class="p">,</span> <span class="s2">&quot;Google&quot;</span><span class="p">]}</span>
@@ -13845,11 +13717,7 @@ In case you used a LabelEncoder before this OneHotEncoder to convert the categor
 
 <div class="output_area">
 
-<<<<<<< HEAD
-    <div class="prompt output_prompt">Out[12]:</div>
-=======
     <div class="prompt output_prompt">Out[39]:</div>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 
 
 
@@ -13905,11 +13773,7 @@ In case you used a LabelEncoder before this OneHotEncoder to convert the categor
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<<<<<<< HEAD
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
-=======
 <div class="prompt input_prompt">In&nbsp;[40]:</div>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">values</span>
@@ -13925,11 +13789,7 @@ In case you used a LabelEncoder before this OneHotEncoder to convert the categor
 
 <div class="output_area">
 
-<<<<<<< HEAD
-    <div class="prompt output_prompt">Out[13]:</div>
-=======
     <div class="prompt output_prompt">Out[40]:</div>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 
 
 
@@ -13949,11 +13809,7 @@ In case you used a LabelEncoder before this OneHotEncoder to convert the categor
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<<<<<<< HEAD
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
-=======
 <div class="prompt input_prompt">In&nbsp;[41]:</div>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### OneHotEncoding</span>
@@ -13967,11 +13823,7 @@ In case you used a LabelEncoder before this OneHotEncoder to convert the categor
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<<<<<<< HEAD
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
-=======
 <div class="prompt input_prompt">In&nbsp;[42]:</div>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### LabelEncoder</span>
@@ -14008,11 +13860,7 @@ In case you used a LabelEncoder before this OneHotEncoder to convert the categor
 
 <div class="output_area">
 
-<<<<<<< HEAD
-    <div class="prompt output_prompt">Out[15]:</div>
-=======
     <div class="prompt output_prompt">Out[42]:</div>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 
 
 
@@ -14073,11 +13921,7 @@ In case you used a LabelEncoder before this OneHotEncoder to convert the categor
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<<<<<<< HEAD
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
-=======
 <div class="prompt input_prompt">In&nbsp;[43]:</div>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## OneHotEncoder</span>
@@ -14111,34 +13955,13 @@ In case you used a LabelEncoder before this OneHotEncoder to convert the categor
 </div>
 </div>
 
-<<<<<<< HEAD
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>C:\ProgramData\Anaconda3\lib\site-packages\sklearn\preprocessing\_encoders.py:368: FutureWarning: The handling of integer data will change in version 0.22. Currently, the categories are determined based on the range [0, max(values)], while in the future they will be determined based on the unique values.
-If you want the future behaviour and silence this warning, you can specify &#34;categories=&#39;auto&#39;&#34;.
-In case you used a LabelEncoder before this OneHotEncoder to convert the categories to integers, then you can now use the OneHotEncoder directly.
-  warnings.warn(msg, FutureWarning)
-</pre>
-</div>
-</div>
-
-=======
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<<<<<<< HEAD
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
-=======
 <div class="prompt input_prompt">In&nbsp;[44]:</div>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 변경된 값을 DataFrame형태로 변경</span>
@@ -14156,11 +13979,7 @@ In case you used a LabelEncoder before this OneHotEncoder to convert the categor
 
 <div class="output_area">
 
-<<<<<<< HEAD
-    <div class="prompt output_prompt">Out[17]:</div>
-=======
     <div class="prompt output_prompt">Out[44]:</div>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 
 
 
@@ -14226,11 +14045,7 @@ In case you used a LabelEncoder before this OneHotEncoder to convert the categor
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<<<<<<< HEAD
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
-=======
 <div class="prompt input_prompt">In&nbsp;[45]:</div>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1_new</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df1</span><span class="p">,</span> <span class="n">dx</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -14247,11 +14062,7 @@ In case you used a LabelEncoder before this OneHotEncoder to convert the categor
 
 <div class="output_area">
 
-<<<<<<< HEAD
-    <div class="prompt output_prompt">Out[18]:</div>
-=======
     <div class="prompt output_prompt">Out[45]:</div>
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
 
 
 
@@ -14345,22 +14156,6 @@ In case you used a LabelEncoder before this OneHotEncoder to convert the categor
 </div>
 </div>
 </div>
-<<<<<<< HEAD
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-=======
->>>>>>> c71117f7dbf2a639ca983ba671b800860feecc05
     </div>
   </div>
 </body>
