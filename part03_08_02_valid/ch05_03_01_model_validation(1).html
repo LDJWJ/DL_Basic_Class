@@ -13083,7 +13083,20 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Image</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -13107,7 +13120,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_digits</span>
@@ -13140,13 +13153,13 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[10]:</div>
+    <div class="prompt output_prompt">Out[24]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x29bd3244220&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1ff2a9220a0&gt;</pre>
 </div>
 
 </div>
@@ -13183,7 +13196,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">digits</span><span class="o">.</span><span class="n">target</span> <span class="o">==</span> <span class="mi">9</span>
@@ -13196,7 +13209,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span>
@@ -13210,7 +13223,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">y_train</span><span class="p">)</span>
@@ -13226,13 +13239,13 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[13]:</div>
+    <div class="prompt output_prompt">Out[27]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x29bd301d670&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1ff30a1d490&gt;</pre>
 </div>
 
 </div>
@@ -13258,7 +13271,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">y_test</span><span class="p">)</span>
@@ -13274,13 +13287,13 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[28]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x29bd30b9e80&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1ff300593a0&gt;</pre>
 </div>
 
 </div>
@@ -13324,7 +13337,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.dummy</span> <span class="kn">import</span> <span class="n">DummyClassifier</span>
@@ -13367,7 +13380,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
@@ -13421,7 +13434,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
@@ -13448,20 +13461,8 @@ div#notebook {
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>C:\Users\hp\anaconda3\lib\site-packages\sklearn\dummy.py:131: FutureWarning: The default value of strategy will change from stratified to prior in 0.24.
-  warnings.warn(&#34;The default value of strategy will change from &#34;
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>dummy 점수: 0.79
+<pre>dummy 점수: 0.84
 logreg 점수: 0.98
 </pre>
 </div>
@@ -13473,7 +13474,9 @@ logreg 점수: 0.98
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>C:\Users\hp\anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:762: ConvergenceWarning: lbfgs failed to converge (status=1):
+<pre>C:\ProgramData\Anaconda3\lib\site-packages\sklearn\dummy.py:131: FutureWarning: The default value of strategy will change from stratified to prior in 0.24.
+  warnings.warn(&#34;The default value of strategy will change from &#34;
+C:\ProgramData\Anaconda3\lib\site-packages\sklearn\linear_model\_logistic.py:762: ConvergenceWarning: lbfgs failed to converge (status=1):
 STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
 
 Increase the number of iterations (max_iter) or scale the data as shown in:
@@ -13498,7 +13501,7 @@ Please also refer to the documentation for alternative solver options:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">mglearn</span>
@@ -13511,7 +13514,7 @@ Please also refer to the documentation for alternative solver options:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">mglearn</span><span class="o">.</span><span class="n">plots</span><span class="o">.</span><span class="n">plot_binary_confusion_matrix</span><span class="p">()</span>
@@ -13546,7 +13549,7 @@ Please also refer to the documentation for alternative solver options:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">mglearn</span><span class="o">.</span><span class="n">plots</span><span class="o">.</span><span class="n">plot_confusion_matrix_illustration</span><span class="p">()</span>
@@ -13581,7 +13584,7 @@ Please also refer to the documentation for alternative solver options:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">confusion_matrix</span>
@@ -13624,7 +13627,7 @@ Please also refer to the documentation for alternative solver options:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;빈도 기반 더미 모델:&quot;</span><span class="p">)</span>
@@ -13659,8 +13662,8 @@ Please also refer to the documentation for alternative solver options:
  [ 47   0]]
 
 무작위 더미 모델:
-[[362  41]
- [ 44   3]]
+[[361  42]
+ [ 41   6]]
 
 결정 트리:
 [[390  13]
@@ -13682,34 +13685,176 @@ Please also refer to the documentation for alternative solver options:
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="&#48516;&#47448;&#51032;-&#54217;&#44032;&#51648;&#54364;&#47484;-&#49332;&#54196;&#48372;&#51088;.">&#48516;&#47448;&#51032; &#54217;&#44032;&#51648;&#54364;&#47484; &#49332;&#54196;&#48372;&#51088;.<a class="anchor-link" href="#&#48516;&#47448;&#51032;-&#54217;&#44032;&#51648;&#54364;&#47484;-&#49332;&#54196;&#48372;&#51088;.">&#182;</a></h3><ul>
 <li>정확도(accuracy) : 정확하게 예측/전체 예측수</li>
-<li><p>정밀도(precision) : 예측을 양성(Positive)으로 한것 전체-TP+FP중.</p>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## 머신러닝 작업 flow</span>
+<span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;img/model_validation01.png&#39;</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#48516;&#47448;&#51032;-&#54217;&#44032;&#51648;&#54364;&#47484;-&#49332;&#54196;&#48372;&#51088;.">&#48516;&#47448;&#51032; &#54217;&#44032;&#51648;&#54364;&#47484; &#49332;&#54196;&#48372;&#51088;.<a class="anchor-link" href="#&#48516;&#47448;&#51032;-&#54217;&#44032;&#51648;&#54364;&#47484;-&#49332;&#54196;&#48372;&#51088;.">&#182;</a></h3><h3 id="&#51221;&#54869;&#46020;(accuracy)-:-&#51221;&#54869;&#54616;&#44172;-&#50696;&#52769;/&#51204;&#52404;-&#50696;&#52769;&#49688;">&#51221;&#54869;&#46020;(accuracy) : &#51221;&#54869;&#54616;&#44172; &#50696;&#52769;/&#51204;&#52404; &#50696;&#52769;&#49688;<a class="anchor-link" href="#&#51221;&#54869;&#46020;(accuracy)-:-&#51221;&#54869;&#54616;&#44172;-&#50696;&#52769;/&#51204;&#52404;-&#50696;&#52769;&#49688;">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+\begin{equation}
+\text{accuracy} = \frac{\text{TP} + \text{TN}}{\text{TP} + \text{FP} + \text{FN} + \text{TN}}
+\end{equation}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#51221;&#48128;&#46020;(precision)-:-&#50696;&#52769;&#51012;-&#50577;&#49457;(Positive)&#51004;&#47196;-&#54620;&#44163;-&#51204;&#52404;-TP+FP&#51473;&#50640;-&#47582;&#45716;-&#44163;(T*)">&#51221;&#48128;&#46020;(precision) : &#50696;&#52769;&#51012; &#50577;&#49457;(Positive)&#51004;&#47196; &#54620;&#44163; &#51204;&#52404;-TP+FP&#51473;&#50640; &#47582;&#45716; &#44163;(T*)<a class="anchor-link" href="#&#51221;&#48128;&#46020;(precision)-:-&#50696;&#52769;&#51012;-&#50577;&#49457;(Positive)&#51004;&#47196;-&#54620;&#44163;-&#51204;&#52404;-TP+FP&#51473;&#50640;-&#47582;&#45716;-&#44163;(T*)">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+\begin{equation}
+\text{정밀도(precision)} = \frac{\text{잘 예측(TP)}}{  \text{예측을 양성으로 한 것 전체(TP+FP)  }  }
+\end{equation}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>그중에 얼마나 많은 샘플이 진짜 양성(TP)인가?(양성의 예측도가 좋은가?)</li>
-<li>TP/(TP+FP)</li>
 <li>언제 사용하는가? : 거짓 양성(FP)의 수를 줄일 때 사용<ul>
 <li>약이 효과 있다고 예측(positive), 하지만 예측 결과가 틀림</li>
 <li>암이 아닌데 암이라고 예측</li>
 </ul>
 </li>
 </ul>
-</li>
-<li><p>재현율(recall) : 실제 데이터의 양성 데이터(TP + FN) 중에</p>
-<ul>
-<li>얼마나 많은 샘플을 양성으로 잘 분류했나?(TP)</li>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#48124;&#44048;&#46020;(sensitivity),-&#51116;&#54788;&#50984;(recall,-TPRate)">&#48124;&#44048;&#46020;(sensitivity), &#51116;&#54788;&#50984;(recall, TPRate)<a class="anchor-link" href="#&#48124;&#44048;&#46020;(sensitivity),-&#51116;&#54788;&#50984;(recall,-TPRate)">&#182;</a></h3><ul>
+<li>실제 데이터의 양성 데이터(TP + FN)중에 얼마나 많은 샘플을 양성으로 잘 분류했나?(TP)</li>
 <li>TP/(TP + FN)</li>
-<li>재현율이 높아지면 FP는 상대적으로 낮아짐.</li>
-<li>언제 사용? FN(음성 예측. 잘못 예측함.)을 줄일 때, 성능 지표로 사용합니다.<ul>
-<li>(암인데 음성(아니라고-Negative)예측하여, 실수. 엄청난 실수 <strong>실제 암인데(Positive)인데, 이를 병원에서 암이 아니다(Negative)</strong>로 예측하면 얼마나 큰일인가?</li>
-</ul>
-</li>
-<li>다른 말로 <strong>민감도(sensitivity), 적중률(hit rate), 진짜 양성 비율(TPR)</strong>이라고 합니다.</li>
-</ul>
-</li>
-<li><p>따라서 병원의 암 예측 같은 경우는 FN를 최소화시켜 재현율을 줄이면, 상대적으로 정밀도를 최대화된다.</p>
-</li>
-<li>f-score</li>
 </ul>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+\begin{equation}
+\text{민감도(recall, 재현율)} = \frac{\text{잘 예측(TP)}}{  \text{실제 값이 양성인것 전체(TP+FN)  }  }
+\end{equation}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>재현율이 높아지면 FP는 상대적으로 낮아짐.</li>
+<li>언제 사용? FN(음성 예측. 잘못 예측함.)을 줄일 때, 성능 지표로 사용합니다.</li>
+<li>(암인데 음성(아니라고-Negative)예측하여, 실수. 엄청난 실수 **실제 암인데(Positive)인데, <ul>
+<li>이를 병원에서 암이 아니다(Negative)**로 예측하면 얼마나 큰일인가?</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>다른 말로 <strong>민감도(sensitivity), 적중률(hit rate), 진짜 양성 비율(TPR)</strong>이라고 합니다.</li>
+<li>따라서 병원의 암 예측 같은 경우는 FN를 최소화시켜 재현율을 줄이면, 상대적으로 정밀도를 최대화된다.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#53945;&#51060;&#46020;">&#53945;&#51060;&#46020;<a class="anchor-link" href="#&#53945;&#51060;&#46020;">&#182;</a></h3><ul>
+<li>실제 데이터의 음성 데이터(FP + TN)중에 얼마나 많은 샘플을 잘 분류했나?(TN)</li>
+<li>TN/(FP + TN)</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+\begin{equation}
+\text{특이도} = \frac{\text{잘 예측(TN)}}{  \text{실제 값이 음성인것 전체(FP + TN)  }  }
+\end{equation}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="FPRate">FPRate<a class="anchor-link" href="#FPRate">&#182;</a></h3><ul>
+<li>실제 데이터의 음성 데이터(FP + TN)중에 잘 분류하지 못한 것?(FP)</li>
+<li>FP/(FP + TN)</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+\begin{equation}
+\text{FPRate} = \frac{\text{틀린 예측(FP)}}{  \text{실제 값이 음성인것 전체(FP + TN)  }  }
+\end{equation}
 </div>
 </div>
 </div>
@@ -13731,7 +13876,7 @@ Please also refer to the documentation for alternative solver options:
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="F-score">F-score<a class="anchor-link" href="#F-score">&#182;</a></h3><ul>
-<li>정밀도와 재현율을 하나만 가지고 측정이 안된다. 정밀도(precision)와 재현율(recall)의 조화 평균인 f-점수 또는 f-측정은 이 둘을 하나로 요약을 해 줍니다. </li>
+<li>정밀도와 민감도(recall,재현율)을 하나만 가지고 측정이 안된다. 정밀도(precision)와 재현율(recall)의 조화 평균인 f-점수 또는 f-측정은 이 둘을 하나로 요약을 해 줍니다. </li>
 </ul>
 
 </div>
@@ -13756,7 +13901,7 @@ Please also refer to the documentation for alternative solver options:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">f1_score</span>
@@ -13786,7 +13931,7 @@ Please also refer to the documentation for alternative solver options:
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>무작위 더미 모델의 f1 score: 0.07
+<pre>무작위 더미 모델의 f1 score: 0.13
 트리 모델의 f1 score: 0.55
 로지스틱 회귀 모델의 f1 score: 0.92
 </pre>
@@ -13810,7 +13955,7 @@ Please also refer to the documentation for alternative solver options:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span>
@@ -13845,6 +13990,18 @@ weighted avg       0.80      0.90      0.85       450
 </div>
 </div>
 
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\ProgramData\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13858,7 +14015,7 @@ weighted avg       0.80      0.90      0.85       450
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span>
@@ -13882,12 +14039,12 @@ weighted avg       0.80      0.90      0.85       450
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>              precision    recall  f1-score   support
 
-       not 9       0.89      0.90      0.89       403
-        is 9       0.07      0.06      0.07        47
+       not 9       0.90      0.90      0.90       403
+        is 9       0.12      0.13      0.13        47
 
-    accuracy                           0.81       450
-   macro avg       0.48      0.48      0.48       450
-weighted avg       0.81      0.81      0.81       450
+    accuracy                           0.82       450
+   macro avg       0.51      0.51      0.51       450
+weighted avg       0.82      0.82      0.82       450
 
 </pre>
 </div>
@@ -13906,11 +14063,12 @@ weighted avg       0.81      0.81      0.81       450
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">pred_logreg</span><span class="p">,</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> 
+                            <span class="n">pred_logreg</span><span class="p">,</span>
                             <span class="n">target_names</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;not 9&quot;</span><span class="p">,</span> <span class="s2">&quot;is 9&quot;</span><span class="p">]))</span>
 </pre></div>
 
@@ -13961,7 +14119,7 @@ weighted avg       0.98      0.98      0.98       450
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">mglearn.datasets</span> <span class="kn">import</span> <span class="n">make_blobs</span> 
@@ -13996,8 +14154,8 @@ weighted avg       0.98      0.98      0.98       450
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>C:\Users\WJ\Anaconda3\lib\site-packages\sklearn\utils\deprecation.py:85: DeprecationWarning: Function make_blobs is deprecated; Please import make_blobs directly from scikit-learn
-  warnings.warn(msg, category=DeprecationWarning)
+<pre>C:\ProgramData\Anaconda3\lib\site-packages\sklearn\utils\deprecation.py:86: FutureWarning: Function make_blobs is deprecated; Please import make_blobs directly from scikit-learn
+  warnings.warn(msg, category=FutureWarning)
 </pre>
 </div>
 </div>
@@ -14008,7 +14166,7 @@ weighted avg       0.98      0.98      0.98       450
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
@@ -14021,7 +14179,7 @@ weighted avg       0.98      0.98      0.98       450
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
@@ -14035,7 +14193,7 @@ weighted avg       0.98      0.98      0.98       450
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">mglearn</span><span class="o">.</span><span class="n">plots</span><span class="o">.</span><span class="n">plot_decision_threshold</span><span class="p">()</span>
@@ -14081,7 +14239,7 @@ weighted avg       0.98      0.98      0.98       450
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">svc</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)))</span>
@@ -14158,7 +14316,7 @@ weighted avg       0.92      0.88      0.89       113
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 0으로 분류</span>
@@ -14209,7 +14367,7 @@ weighted avg       0.92      0.88      0.89       113
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_pred_lower_threshold</span> <span class="o">=</span> <span class="n">svc</span><span class="o">.</span><span class="n">decision_function</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-.</span><span class="mi">8</span>
@@ -14233,7 +14391,7 @@ weighted avg       0.92      0.88      0.89       113
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_lower_threshold</span><span class="p">))</span>
@@ -14283,19 +14441,6 @@ weighted avg       0.95      0.83      0.87       113
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
 </div>
     </div>
   </div>
