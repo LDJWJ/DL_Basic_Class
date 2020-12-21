@@ -3,17 +3,17 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ch02_05_Keras_LAB01_Start</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>ch01_01_KerasStart_numpy</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
 
 <style type="text/css">
-    pre { line-height: 125%; margin: 0; }
-td.linenos pre { color: #000000; background-color: #f0f0f0; padding: 0 5px 0 5px; }
-span.linenos { color: #000000; background-color: #f0f0f0; padding: 0 5px 0 5px; }
-td.linenos pre.special { color: #000000; background-color: #ffffc0; padding: 0 5px 0 5px; }
-span.linenos.special { color: #000000; background-color: #ffffc0; padding: 0 5px 0 5px; }
+    pre { line-height: 125%; }
+td.linenos pre { color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px; }
+td.linenos pre.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
 .highlight .hll { background-color: var(--jp-cell-editor-active-background) }
 .highlight { background: var(--jp-cell-editor-background); color: var(--jp-mirror-editor-variable-color) }
 .highlight .c { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment */
@@ -14259,16 +14259,31 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="&#52992;&#46972;&#49828;-&#50508;&#50500;&#48372;&#44592;-&#48143;-&#49892;&#49845;">&#52992;&#46972;&#49828; &#50508;&#50500;&#48372;&#44592; &#48143; &#49892;&#49845;<a class="anchor-link" href="#&#52992;&#46972;&#49828;-&#50508;&#50500;&#48372;&#44592;-&#48143;-&#49892;&#49845;">&#182;</a></h3>
+<h3 id="Keras-&#49884;&#51089;&#54616;&#44592;">Keras &#49884;&#51089;&#54616;&#44592;<a class="anchor-link" href="#Keras-&#49884;&#51089;&#54616;&#44592;">&#182;</a></h3><ul>
+<li>라이브러리 불러오기</li>
+<li>신경망을 위한 데이터 이해</li>
+<li>MNIST 데이터 셋</li>
+<li>넘파이를 활용한 텐서 조작</li>
+</ul>
+
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="01.-&#46972;&#51060;&#48652;&#47084;&#47532;-&#51076;&#54252;&#53944;">01. &#46972;&#51060;&#48652;&#47084;&#47532; &#51076;&#54252;&#53944;<a class="anchor-link" href="#01.-&#46972;&#51060;&#48652;&#47084;&#47532;-&#51076;&#54252;&#53944;">&#182;</a></h3><ul>
+<li>설치 : pip install keras</li>
+</ul>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
-<span class="kn">import</span> <span class="nn">keras</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">keras</span>
+<span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+<span class="n">keras</span><span class="o">.</span><span class="n">__version__</span>
 </pre></div>
 
      </div>
@@ -14276,161 +14291,36 @@ a.anchor-link {
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### 라이브러리 확인</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">pandas</span>
-</pre></div>
+<div class="jp-Cell-outputWrapper">
 
-     </div>
-</div>
-</div>
-</div>
 
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&#39;2.4.3&#39;</pre>
 </div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="&#52992;&#46972;&#49828;?">&#52992;&#46972;&#49828;?<a class="anchor-link" href="#&#52992;&#46972;&#49828;?">&#182;</a></h3><ul>
-<li>ONEIROS(Open-ended Neuro-Electronic Intelligent Robot Operating System) 프로젝트 일부</li>
-<li>오네이로스 - 꿈을 의인화 시킨 신</li>
-<li>꿈을 인간들에게 보내는 신(진실, 거짓의 문)</li>
-<li>밤의 여신 닉스와 잠의 신(힙노스)의 자식들</li>
-</ul>
 
 </div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="&#52992;&#46972;&#49828;&#51032;-&#51452;&#50836;-&#53945;&#51669;-4&#44032;&#51648;">&#52992;&#46972;&#49828;&#51032; &#51452;&#50836; &#53945;&#51669; 4&#44032;&#51648;<a class="anchor-link" href="#&#52992;&#46972;&#49828;&#51032;-&#51452;&#50836;-&#53945;&#51669;-4&#44032;&#51648;">&#182;</a></h3><ul>
-<li>개발 및 유지 보수 : 프랑소와 쏠레(Francois Chollet)</li>
-</ul>
 
 </div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>모듈화(Modularity) : 모듈은 독립적이고 최소한의 제약사항으로 연결</li>
-<li>최소주의(Minimalism) : 각 모듈은 짧고 간결하다.</li>
-<li>쉬운 확장성 : 새로운 클래스나 함수로 모듈을 아주 쉽게 추가 </li>
-<li>파이썬 기반 : 파이썬 코드로 모델들이 정의</li>
-</ul>
 
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="&#52992;&#46972;&#49828;-&#46373;&#47084;&#45789;-&#47784;&#45944;-&#47564;&#46308;&#44592;">&#52992;&#46972;&#49828; &#46373;&#47084;&#45789; &#47784;&#45944; &#47564;&#46308;&#44592;<a class="anchor-link" href="#&#52992;&#46972;&#49828;-&#46373;&#47084;&#45789;-&#47784;&#45944;-&#47564;&#46308;&#44592;">&#182;</a></h2><ul>
-<li><p>가. 데이터 셋 생성</p>
-<ul>
-<li>데이터 준비(훈련셋, 검증셋, 시험셋 등)</li>
-<li>딥러닝 모델의 학습 및 평가를 위한 데이터 형태 맞추기(포맷 변환)</li>
-</ul>
-</li>
-<li><p>나. 모델 구성</p>
-<ul>
-<li>모델(Sequential)을 생성 후, 레이어를 추가하여 구성</li>
-<li>복잡한 모델을 구성시에 Keras API를 사용 </li>
-</ul>
-</li>
-<li><p>다. 모델 학습과정 설정하기( 학습에 대한 설정 - compile() )</p>
-<ul>
-<li>학습에 대한 설정, 손실 함수 및 최적화 방법 정의</li>
-</ul>
-</li>
-<li><p>라. 모델 학습( 모델을 훈련셋으로 학습 - fit() 함수 )</p>
-</li>
-<li>마. 학습과정 살펴보기( 훈련셋, 검증셋의 손실 및 정확도 측정 )</li>
-<li>바. 모델 평가( evaluate() ) - 준비된 시험셋으로 학습 모델 평가</li>
-<li>사. 모델 사용하기(predict() )</li>
-</ul>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 0. 사용할 패키지 불러오기</span>
-<span class="kn">from</span> <span class="nn">keras.utils</span> <span class="kn">import</span> <span class="n">np_utils</span>
-<span class="kn">from</span> <span class="nn">keras.datasets</span> <span class="kn">import</span> <span class="n">mnist</span>
-<span class="kn">from</span> <span class="nn">keras.models</span> <span class="kn">import</span> <span class="n">Sequential</span>
-<span class="kn">from</span> <span class="nn">keras.layers</span> <span class="kn">import</span> <span class="n">Dense</span><span class="p">,</span> <span class="n">Activation</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 1. 데이터셋 생성하기</span>
-<span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">),</span> <span class="p">(</span><span class="n">x_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span> <span class="o">=</span> <span class="n">mnist</span><span class="o">.</span><span class="n">load_data</span><span class="p">()</span>
-<span class="n">x_train</span> <span class="o">=</span> <span class="n">x_train</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">60000</span><span class="p">,</span> <span class="mi">784</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;float32&#39;</span><span class="p">)</span> <span class="o">/</span> <span class="mf">255.0</span>
-<span class="n">x_test</span> <span class="o">=</span> <span class="n">x_test</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">10000</span><span class="p">,</span> <span class="mi">784</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;float32&#39;</span><span class="p">)</span> <span class="o">/</span> <span class="mf">255.0</span>
-<span class="n">y_train</span> <span class="o">=</span> <span class="n">np_utils</span><span class="o">.</span><span class="n">to_categorical</span><span class="p">(</span><span class="n">y_train</span><span class="p">)</span>
-<span class="n">y_test</span> <span class="o">=</span> <span class="n">np_utils</span><span class="o">.</span><span class="n">to_categorical</span><span class="p">(</span><span class="n">y_test</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 2. 모델 구성하기</span>
-<span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
-<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">units</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">input_dim</span><span class="o">=</span><span class="mi">28</span><span class="o">*</span><span class="mi">28</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">))</span>
-<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">units</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;softmax&#39;</span><span class="p">))</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 3. 모델 학습과정 설정하기</span>
-<span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="s1">&#39;categorical_crossentropy&#39;</span><span class="p">,</span> 
-              <span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;sgd&#39;</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 4. 모델 학습시키기</span>
-<span class="n">hist</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14450,16 +14340,374 @@ a.anchor-link {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Epoch 1/5
-1875/1875 [==============================] - 1s 621us/step - loss: 0.6540 - accuracy: 0.8355
-Epoch 2/5
-1875/1875 [==============================] - 1s 616us/step - loss: 0.3408 - accuracy: 0.9050
-Epoch 3/5
-1875/1875 [==============================] - 1s 615us/step - loss: 0.2934 - accuracy: 0.9174
-Epoch 4/5
-1875/1875 [==============================] - 1s 613us/step - loss: 0.2644 - accuracy: 0.9252
-Epoch 5/5
-1875/1875 [==============================] - 1s 622us/step - loss: 0.2429 - accuracy: 0.9316
+<pre>2.4.0
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="02.-&#49888;&#44221;&#47581;&#51012;-&#50948;&#54620;-&#45936;&#51060;&#53552;-&#51060;&#54644;">02. &#49888;&#44221;&#47581;&#51012; &#50948;&#54620; &#45936;&#51060;&#53552; &#51060;&#54644;<a class="anchor-link" href="#02.-&#49888;&#44221;&#47581;&#51012;-&#50948;&#54620;-&#45936;&#51060;&#53552;-&#51060;&#54644;">&#182;</a></h3><ul>
+<li>Tensor 자료형</li>
+<li>스칼라 : 하나의 숫자만 담고 있는 텐서를 스칼라라고 한다.<ul>
+<li>0차원 텐서, 0D텐서</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">ndim</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="n">x</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>0
+()
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>array(12)</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="&#48289;&#53552;(1D-&#53584;&#49436;)">&#48289;&#53552;(1D &#53584;&#49436;)<a class="anchor-link" href="#&#48289;&#53552;(1D-&#53584;&#49436;)">&#182;</a></h3><ul>
+<li>숫자의 배열을 벡터(vector)또는 1D텐서라고 부른다. 1D 텐서는 딱 하나의 축을 가진다.</li>
+</ul>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">50</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">ndim</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="n">x</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>1
+(5,)
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>array([10, 20, 30, 40, 50])</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>위의 값은 5개의 원소를 가지고 있으므로 5차원 벡터라 부른다.</li>
+</ul>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="&#54665;&#47148;(2D-&#53584;&#49436;)">&#54665;&#47148;(2D &#53584;&#49436;)<a class="anchor-link" href="#&#54665;&#47148;(2D-&#53584;&#49436;)">&#182;</a></h3><ul>
+<li>벡터의 배열을 행렬(matrix) 또는 2D텐서라 부른다. 행렬에는 2개의 축이 있다. 보통 행과 열이라 한다.</li>
+</ul>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span> <span class="p">[</span><span class="mi">11</span><span class="p">,</span><span class="mi">21</span><span class="p">,</span><span class="mi">31</span><span class="p">],</span>
+               <span class="p">[</span><span class="mi">12</span><span class="p">,</span><span class="mi">22</span><span class="p">,</span><span class="mi">32</span><span class="p">],</span>
+               <span class="p">[</span><span class="mi">13</span><span class="p">,</span><span class="mi">23</span><span class="p">,</span><span class="mi">33</span><span class="p">]</span> <span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">ndim</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="n">x</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>2
+(3, 3)
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>array([[11, 21, 31],
+       [12, 22, 32],
+       [13, 23, 33]])</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="3D&#53584;&#49436;&#50752;-&#44256;&#52264;&#50896;-&#53584;&#49436;">3D&#53584;&#49436;&#50752; &#44256;&#52264;&#50896; &#53584;&#49436;<a class="anchor-link" href="#3D&#53584;&#49436;&#50752;-&#44256;&#52264;&#50896;-&#53584;&#49436;">&#182;</a></h3><ul>
+<li>행렬들을 하나의 새로운 배열로 합치면 숫자가 채워진 직육면체 형태로 해석할 수 있는 3D텐서가 만들어진다.</li>
+</ul>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+              <span class="p">[</span> <span class="p">[</span><span class="mi">11</span><span class="p">,</span><span class="mi">21</span><span class="p">,</span><span class="mi">31</span><span class="p">],</span>
+               <span class="p">[</span><span class="mi">12</span><span class="p">,</span><span class="mi">22</span><span class="p">,</span><span class="mi">32</span><span class="p">],</span>
+               <span class="p">[</span><span class="mi">13</span><span class="p">,</span><span class="mi">23</span><span class="p">,</span><span class="mi">33</span><span class="p">]</span> <span class="p">],</span>
+              <span class="p">[</span> <span class="p">[</span><span class="mi">11</span><span class="p">,</span><span class="mi">21</span><span class="p">,</span><span class="mi">31</span><span class="p">],</span>
+               <span class="p">[</span><span class="mi">12</span><span class="p">,</span><span class="mi">22</span><span class="p">,</span><span class="mi">32</span><span class="p">],</span>
+               <span class="p">[</span><span class="mi">13</span><span class="p">,</span><span class="mi">23</span><span class="p">,</span><span class="mi">33</span><span class="p">]</span> <span class="p">],</span>
+              <span class="p">[</span> <span class="p">[</span><span class="mi">11</span><span class="p">,</span><span class="mi">21</span><span class="p">,</span><span class="mi">31</span><span class="p">],</span>
+               <span class="p">[</span><span class="mi">12</span><span class="p">,</span><span class="mi">22</span><span class="p">,</span><span class="mi">32</span><span class="p">],</span>
+               <span class="p">[</span><span class="mi">13</span><span class="p">,</span><span class="mi">23</span><span class="p">,</span><span class="mi">33</span><span class="p">]</span> <span class="p">]</span>
+             <span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">ndim</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="n">x</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>3
+(3, 3, 3)
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>array([[[11, 21, 31],
+        [12, 22, 32],
+        [13, 23, 33]],
+
+       [[11, 21, 31],
+        [12, 22, 32],
+        [13, 23, 33]],
+
+       [[11, 21, 31],
+        [12, 22, 32],
+        [13, 23, 33]]])</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>이와같이 3D텐서들을 하나의 배열로 합치면 4D텐서가 된다</li>
+<li>딥러닝에서는 보통 0D에서 4D까지의 텐서를 다룬다.</li>
+</ul>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="03.-MNIST-&#45936;&#51060;&#53552;-&#49483;">03. MNIST &#45936;&#51060;&#53552; &#49483;<a class="anchor-link" href="#03.-MNIST-&#45936;&#51060;&#53552;-&#49483;">&#182;</a></h3>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.datasets</span> <span class="kn">import</span> <span class="n">mnist</span>
+<span class="p">(</span><span class="n">train_images</span><span class="p">,</span> <span class="n">train_labels</span><span class="p">),</span> <span class="p">(</span><span class="n">test_images</span><span class="p">,</span> <span class="n">test_labels</span><span class="p">)</span> <span class="o">=</span> <span class="n">mnist</span><span class="o">.</span><span class="n">load_data</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz
+11493376/11490434 [==============================] - 1s 0us/step
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">train_images</span><span class="o">.</span><span class="n">ndim</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>3
 </pre>
 </div>
 </div>
@@ -14474,10 +14722,7 @@ Epoch 5/5
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 5. 학습과정 살펴보기</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;## training loss and acc ##&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">hist</span><span class="o">.</span><span class="n">history</span><span class="p">[</span><span class="s1">&#39;loss&#39;</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">hist</span><span class="o">.</span><span class="n">history</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_images</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 
      </div>
@@ -14493,15 +14738,15 @@ Epoch 5/5
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>## training loss and acc ##
-[0.6540129780769348, 0.3407690227031708, 0.2934190630912781, 0.2643829882144928, 0.24287305772304535]
-[0.8355166912078857, 0.9050166606903076, 0.9173833131790161, 0.9252333045005798, 0.9316333532333374]
-</pre>
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>(60000, 28, 28)</pre>
 </div>
+
 </div>
 
 </div>
@@ -14514,10 +14759,113 @@ Epoch 5/5
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 6. 모델 평가하기</span>
-<span class="n">loss_and_metrics</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">x_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;## evaluation loss and_metrics ##&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">loss_and_metrics</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_images</span><span class="o">.</span><span class="n">dtype</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>dtype(&#39;uint8&#39;)</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="04-&#51060;&#48120;&#51648;&#47484;-&#52636;&#47141;&#54644;-&#48372;&#44592;">04 &#51060;&#48120;&#51648;&#47484; &#52636;&#47141;&#54644; &#48372;&#44592;<a class="anchor-link" href="#04-&#51060;&#48120;&#51648;&#47484;-&#52636;&#47141;&#54644;-&#48372;&#44592;">&#182;</a></h3>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">image</span> <span class="o">=</span> <span class="n">train_images</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">binary</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="05-&#45336;&#54028;&#51060;&#47484;-&#54876;&#50857;&#54620;-&#53584;&#49436;-&#51312;&#51089;">05 &#45336;&#54028;&#51060;&#47484; &#54876;&#50857;&#54620; &#53584;&#49436; &#51312;&#51089;<a class="anchor-link" href="#05-&#45336;&#54028;&#51060;&#47484;-&#54876;&#50857;&#54620;-&#53584;&#49436;-&#51312;&#51089;">&#182;</a></h3><ul>
+<li>배열에 있는 특정 원소를 일부 선택하는 것을 슬라이싱(slicing)이라 한다.</li>
+</ul>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_slice</span> <span class="o">=</span> <span class="n">train_images</span><span class="p">[</span><span class="mi">10</span><span class="p">:</span><span class="mi">50</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_slice</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14537,9 +14885,7 @@ Epoch 5/5
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>313/313 [==============================] - 0s 544us/step - loss: 0.2235 - accuracy: 0.9375
-## evaluation loss and_metrics ##
-[0.22349652647972107, 0.9375]
+<pre>(40, 28, 28)
 </pre>
 </div>
 </div>
@@ -14551,14 +14897,11 @@ Epoch 5/5
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 7. 모델 사용하기</span>
-<span class="n">xhat</span> <span class="o">=</span> <span class="n">x_test</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">yhat</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">xhat</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;## yhat ##&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">yhat</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_slice</span> <span class="o">=</span> <span class="n">train_images</span><span class="p">[</span><span class="mi">10</span><span class="p">:</span><span class="mi">50</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:]</span>  <span class="c1"># 이전것과 동일</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_slice</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14578,9 +14921,7 @@ Epoch 5/5
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>## yhat ##
-[[1.5276781e-04 1.2515417e-07 9.1794042e-05 9.7146764e-04 2.9944019e-06
-  7.2691764e-05 1.0709598e-07 9.9831641e-01 5.8146314e-05 3.3349771e-04]]
+<pre>(40, 28, 28)
 </pre>
 </div>
 </div>
@@ -14589,6 +14930,353 @@ Epoch 5/5
 
 </div>
 
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_slice</span> <span class="o">=</span> <span class="n">train_images</span><span class="p">[</span><span class="mi">10</span><span class="p">:</span><span class="mi">50</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">28</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">28</span><span class="p">]</span>  <span class="c1"># 이전것과 동일</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_slice</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>(40, 28, 28)
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="&#51060;&#48120;&#51648;&#51032;-&#50724;&#47480;&#51901;-&#50500;&#47000;-14-x-14-&#54589;&#49472;-&#49440;&#53469;">&#51060;&#48120;&#51648;&#51032; &#50724;&#47480;&#51901; &#50500;&#47000; 14 x 14 &#54589;&#49472; &#49440;&#53469;<a class="anchor-link" href="#&#51060;&#48120;&#51648;&#51032;-&#50724;&#47480;&#51901;-&#50500;&#47000;-14-x-14-&#54589;&#49472;-&#49440;&#53469;">&#182;</a></h3>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_slice</span> <span class="o">=</span> <span class="n">train_images</span><span class="p">[:,</span> <span class="mi">14</span><span class="p">:,</span> <span class="mi">14</span><span class="p">:]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_slice</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>(60000, 14, 14)
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">image</span> <span class="o">=</span> <span class="n">my_slice</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">binary</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="06-&#48176;&#52824;-&#45936;&#51060;&#53552;">06 &#48176;&#52824; &#45936;&#51060;&#53552;<a class="anchor-link" href="#06-&#48176;&#52824;-&#45936;&#51060;&#53552;">&#182;</a></h3>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>딥러닝 모델에서는 한 번에 전체 데이터를 처리하지 않는다.</li>
+<li>그대신 데이터를 작은 배치(batch)로 나눈다.</li>
+<li>구체적으로 말하면 MNIST 숫자 데이터에서 크기가 128인 배치 하나는 다음과 같다.</li>
+</ul>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">batch</span> <span class="o">=</span> <span class="n">train_images</span><span class="p">[</span> <span class="p">:</span> <span class="mi">128</span><span class="p">]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 다음 배치</span>
+<span class="n">batch</span> <span class="o">=</span> <span class="n">train_images</span><span class="p">[</span><span class="mi">128</span><span class="p">:</span><span class="mi">256</span><span class="p">]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># n번째 배치</span>
+<span class="c1"># batch = train_images[128 * n:128 * (n+1)]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="07-&#53584;&#49436;&#51032;-&#49892;&#51228;-&#49324;&#47168;">07 &#53584;&#49436;&#51032; &#49892;&#51228; &#49324;&#47168;<a class="anchor-link" href="#07-&#53584;&#49436;&#51032;-&#49892;&#51228;-&#49324;&#47168;">&#182;</a></h3>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li><strong>벡터 데이터(sample.features)크기의 2D텐서</strong></li>
+<li><strong>시계열 데이터 또는 시퀀스 (sequence) 데이터 : (samples, timesteps, features)크기의 3D텐서</strong></li>
+<li><strong>이미지(samples, height, width, channels) 또는 (samples, channels, height, width) 크기의 4D텐서</strong></li>
+<li><strong>동영상 : (samples, frames, height, width, channels) 또는 (sampels, frames, channels, height, width)크기의 5D텐서</strong></li>
+</ul>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="&#51060;&#48120;&#51648;-&#45936;&#51060;&#53552;">&#51060;&#48120;&#51648; &#45936;&#51060;&#53552;<a class="anchor-link" href="#&#51060;&#48120;&#51648;-&#45936;&#51060;&#53552;">&#182;</a></h3><ul>
+<li>이미지는 전형적으로 높이, 너비, 컬러 채널의 3차원으로 이루어진다.</li>
+<li>흑백이미지의 channel의 차원 크기는 1입니다.</li>
+<li>256 x 256 크기의 흑백 이미지에 대한 128개의 배치는 (128, 256, 256, 1)크기의 텐서</li>
+<li>256 x 256 크기의 컬러 이미지에 대한 128개의 배치는 (128, 256, 256, 3)크기의 텐서</li>
+</ul>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="&#48708;&#46356;&#50724;-&#45936;&#51060;&#53552;">&#48708;&#46356;&#50724; &#45936;&#51060;&#53552;<a class="anchor-link" href="#&#48708;&#46356;&#50724;-&#45936;&#51060;&#53552;">&#182;</a></h3>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>프레임의 연속 (frames, height, width, color_depth)의 4D텐서</li>
+<li>여러 비디오의 배치(samples, frames, height, width, color_depth)의 5D텐서로 저장.</li>
+</ul>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="60&#52488;-&#51676;&#47532;-144-x-256&#50976;&#53916;&#48652;-&#48708;&#46356;&#50724;-&#53364;&#47549;&#51012;-&#52488;&#45817;-4&#54532;&#47112;&#51076;&#51004;&#47196;-&#49368;&#54540;&#47553;&#54616;&#47732;-240&#54532;&#47112;&#51076;&#51060;-&#46108;&#45796;.">60&#52488; &#51676;&#47532; 144 x 256&#50976;&#53916;&#48652; &#48708;&#46356;&#50724; &#53364;&#47549;&#51012; &#52488;&#45817; 4&#54532;&#47112;&#51076;&#51004;&#47196; &#49368;&#54540;&#47553;&#54616;&#47732; 240&#54532;&#47112;&#51076;&#51060; &#46108;&#45796;.<a class="anchor-link" href="#60&#52488;-&#51676;&#47532;-144-x-256&#50976;&#53916;&#48652;-&#48708;&#46356;&#50724;-&#53364;&#47549;&#51012;-&#52488;&#45817;-4&#54532;&#47112;&#51076;&#51004;&#47196;-&#49368;&#54540;&#47553;&#54616;&#47732;-240&#54532;&#47112;&#51076;&#51060;-&#46108;&#45796;.">&#182;</a></h3><ul>
+<li>클립을 4개 가진 배치는 (4, 240, 144, 256, 3) 크기의 텐서에 저장.</li>
+</ul>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="08-&#53584;&#49436;&#51032;-&#53356;&#44592;-&#48320;&#54872;">08 &#53584;&#49436;&#51032; &#53356;&#44592; &#48320;&#54872;<a class="anchor-link" href="#08-&#53584;&#49436;&#51032;-&#53356;&#44592;-&#48320;&#54872;">&#182;</a></h3>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.datasets</span> <span class="kn">import</span> <span class="n">mnist</span>
+<span class="p">(</span><span class="n">train_images</span><span class="p">,</span> <span class="n">train_labels</span><span class="p">),</span> <span class="p">(</span><span class="n">test_images</span><span class="p">,</span> <span class="n">test_labels</span><span class="p">)</span> <span class="o">=</span> <span class="n">mnist</span><span class="o">.</span><span class="n">load_data</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_images</span> <span class="o">=</span> <span class="n">train_images</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">60000</span><span class="p">,</span> <span class="mi">28</span><span class="o">*</span><span class="mi">28</span><span class="p">))</span>
+<span class="n">train_images</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>(60000, 784)</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[[</span><span class="mf">0.</span> <span class="p">,</span> <span class="mf">1.</span><span class="p">],</span> 
+               <span class="p">[</span><span class="mf">2.</span> <span class="p">,</span> <span class="mf">3.</span><span class="p">],</span>
+               <span class="p">[</span><span class="mf">4.</span> <span class="p">,</span> <span class="mf">5.</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+<span class="n">x1</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">6</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">x1</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>(3, 2)
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>(6, 1)</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="REF">REF<a class="anchor-link" href="#REF">&#182;</a></h3><ul>
+<li>케라스 창시자에게 배우는 딥러닝</li>
+</ul>
+
+</div>
 </div>
 </body>
 

@@ -9,11 +9,11 @@
 
 
 <style type="text/css">
-    pre { line-height: 125%; margin: 0; }
-td.linenos pre { color: #000000; background-color: #f0f0f0; padding: 0 5px 0 5px; }
-span.linenos { color: #000000; background-color: #f0f0f0; padding: 0 5px 0 5px; }
-td.linenos pre.special { color: #000000; background-color: #ffffc0; padding: 0 5px 0 5px; }
-span.linenos.special { color: #000000; background-color: #ffffc0; padding: 0 5px 0 5px; }
+    pre { line-height: 125%; }
+td.linenos pre { color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px; }
+td.linenos pre.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
 .highlight .hll { background-color: var(--jp-cell-editor-active-background) }
 .highlight { background: var(--jp-cell-editor-background); color: var(--jp-mirror-editor-variable-color) }
 .highlight .c { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment */
@@ -14281,7 +14281,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -14299,7 +14299,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">keras</span>
@@ -14315,7 +14315,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">keras</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
@@ -14350,7 +14350,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">train</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;./titanic/train.csv&quot;</span><span class="p">)</span>
@@ -14387,7 +14387,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">train</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -14440,7 +14440,7 @@ memory usage: 83.7+ KB
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">test</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -14492,7 +14492,7 @@ memory usage: 36.0+ KB
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">input_col</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Pclass&#39;</span><span class="p">,</span> <span class="s1">&#39;SibSp&#39;</span><span class="p">,</span> <span class="s1">&#39;Parch&#39;</span><span class="p">]</span>
@@ -14507,7 +14507,7 @@ memory usage: 36.0+ KB
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">train</span><span class="p">[</span> <span class="n">input_col</span> <span class="p">]</span>
@@ -14523,7 +14523,7 @@ memory usage: 36.0+ KB
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">seed</span> <span class="o">=</span> <span class="mi">0</span>
@@ -14538,7 +14538,7 @@ memory usage: 36.0+ KB
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
@@ -14555,7 +14555,7 @@ memory usage: 36.0+ KB
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">X_test</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
@@ -14599,7 +14599,7 @@ memory usage: 36.0+ KB
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.models</span> <span class="kn">import</span> <span class="n">Sequential</span>
@@ -14614,7 +14614,7 @@ memory usage: 36.0+ KB
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
@@ -14636,7 +14636,7 @@ memory usage: 36.0+ KB
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span> <span class="o">=</span> <span class="s1">&#39;binary_crossentropy&#39;</span><span class="p">,</span> 
@@ -14663,205 +14663,205 @@ memory usage: 36.0+ KB
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Epoch 1/100
-67/67 [==============================] - 0s 992us/step - loss: 0.6857 - accuracy: 0.5539
+67/67 [==============================] - 1s 1ms/step - loss: 0.7078 - accuracy: 0.4912
 Epoch 2/100
-67/67 [==============================] - 0s 817us/step - loss: 0.6347 - accuracy: 0.6317
+67/67 [==============================] - 0s 1ms/step - loss: 0.6435 - accuracy: 0.6072
 Epoch 3/100
-67/67 [==============================] - 0s 803us/step - loss: 0.6272 - accuracy: 0.6228
+67/67 [==============================] - 0s 2ms/step - loss: 0.6305 - accuracy: 0.6317
 Epoch 4/100
-67/67 [==============================] - 0s 744us/step - loss: 0.6231 - accuracy: 0.6377
+67/67 [==============================] - 0s 2ms/step - loss: 0.6457 - accuracy: 0.5980
 Epoch 5/100
-67/67 [==============================] - 0s 699us/step - loss: 0.6196 - accuracy: 0.6422
+67/67 [==============================] - 0s 1ms/step - loss: 0.6027 - accuracy: 0.6572
 Epoch 6/100
-67/67 [==============================] - 0s 699us/step - loss: 0.6158 - accuracy: 0.6422
+67/67 [==============================] - 0s 1ms/step - loss: 0.6245 - accuracy: 0.6185
 Epoch 7/100
-67/67 [==============================] - 0s 669us/step - loss: 0.6148 - accuracy: 0.6452
+67/67 [==============================] - 0s 1ms/step - loss: 0.6126 - accuracy: 0.6437
 Epoch 8/100
-67/67 [==============================] - 0s 702us/step - loss: 0.6106 - accuracy: 0.6527
+67/67 [==============================] - 0s 1ms/step - loss: 0.6051 - accuracy: 0.6711
 Epoch 9/100
-67/67 [==============================] - 0s 655us/step - loss: 0.6095 - accuracy: 0.6811
+67/67 [==============================] - 0s 1ms/step - loss: 0.6298 - accuracy: 0.6470
 Epoch 10/100
-67/67 [==============================] - 0s 699us/step - loss: 0.6087 - accuracy: 0.6946
+67/67 [==============================] - 0s 1ms/step - loss: 0.6021 - accuracy: 0.6753
 Epoch 11/100
-67/67 [==============================] - 0s 714us/step - loss: 0.6093 - accuracy: 0.6766
+67/67 [==============================] - 0s 1ms/step - loss: 0.6179 - accuracy: 0.6687
 Epoch 12/100
-67/67 [==============================] - 0s 714us/step - loss: 0.6047 - accuracy: 0.6722
+67/67 [==============================] - 0s 2ms/step - loss: 0.6031 - accuracy: 0.6708
 Epoch 13/100
-67/67 [==============================] - 0s 714us/step - loss: 0.6027 - accuracy: 0.6886
+67/67 [==============================] - 0s 1ms/step - loss: 0.6199 - accuracy: 0.6684
 Epoch 14/100
-67/67 [==============================] - 0s 655us/step - loss: 0.6015 - accuracy: 0.6856
+67/67 [==============================] - 0s 1ms/step - loss: 0.6040 - accuracy: 0.6787
 Epoch 15/100
-67/67 [==============================] - 0s 684us/step - loss: 0.5998 - accuracy: 0.6886
+67/67 [==============================] - 0s 1ms/step - loss: 0.6161 - accuracy: 0.6665
 Epoch 16/100
-67/67 [==============================] - 0s 684us/step - loss: 0.5981 - accuracy: 0.6931
+67/67 [==============================] - 0s 1ms/step - loss: 0.5799 - accuracy: 0.6917
 Epoch 17/100
-67/67 [==============================] - 0s 729us/step - loss: 0.5977 - accuracy: 0.6931
+67/67 [==============================] - 0s 1ms/step - loss: 0.6131 - accuracy: 0.6629
 Epoch 18/100
-67/67 [==============================] - 0s 714us/step - loss: 0.5974 - accuracy: 0.6871
+67/67 [==============================] - 0s 1ms/step - loss: 0.6063 - accuracy: 0.6702
 Epoch 19/100
-67/67 [==============================] - 0s 699us/step - loss: 0.5988 - accuracy: 0.6886
+67/67 [==============================] - 0s 1ms/step - loss: 0.5999 - accuracy: 0.6684
 Epoch 20/100
-67/67 [==============================] - 0s 669us/step - loss: 0.5966 - accuracy: 0.6946
+67/67 [==============================] - 0s 1ms/step - loss: 0.6207 - accuracy: 0.6676
 Epoch 21/100
-67/67 [==============================] - 0s 729us/step - loss: 0.5944 - accuracy: 0.6901
+67/67 [==============================] - 0s 1ms/step - loss: 0.6222 - accuracy: 0.6726
 Epoch 22/100
-67/67 [==============================] - 0s 729us/step - loss: 0.5935 - accuracy: 0.6976
+67/67 [==============================] - 0s 1ms/step - loss: 0.5522 - accuracy: 0.7252
 Epoch 23/100
-67/67 [==============================] - 0s 684us/step - loss: 0.5933 - accuracy: 0.6931
+67/67 [==============================] - 0s 1ms/step - loss: 0.5964 - accuracy: 0.6911
 Epoch 24/100
-67/67 [==============================] - 0s 669us/step - loss: 0.5931 - accuracy: 0.7006
+67/67 [==============================] - 0s 1ms/step - loss: 0.5890 - accuracy: 0.6972
 Epoch 25/100
-67/67 [==============================] - 0s 655us/step - loss: 0.5917 - accuracy: 0.6901
+67/67 [==============================] - 0s 2ms/step - loss: 0.5895 - accuracy: 0.6932
 Epoch 26/100
-67/67 [==============================] - 0s 699us/step - loss: 0.5909 - accuracy: 0.6961
+67/67 [==============================] - 0s 1ms/step - loss: 0.6204 - accuracy: 0.6646
 Epoch 27/100
-67/67 [==============================] - 0s 699us/step - loss: 0.5912 - accuracy: 0.6976
+67/67 [==============================] - 0s 1ms/step - loss: 0.5694 - accuracy: 0.7296
 Epoch 28/100
-67/67 [==============================] - 0s 714us/step - loss: 0.5900 - accuracy: 0.6976
+67/67 [==============================] - 0s 1ms/step - loss: 0.6009 - accuracy: 0.6850
 Epoch 29/100
-67/67 [==============================] - 0s 684us/step - loss: 0.5888 - accuracy: 0.6991
+67/67 [==============================] - 0s 1ms/step - loss: 0.5913 - accuracy: 0.7055
 Epoch 30/100
-67/67 [==============================] - 0s 714us/step - loss: 0.5907 - accuracy: 0.6991
+67/67 [==============================] - 0s 1ms/step - loss: 0.5658 - accuracy: 0.7202
 Epoch 31/100
-67/67 [==============================] - 0s 699us/step - loss: 0.5889 - accuracy: 0.6991
+67/67 [==============================] - 0s 1ms/step - loss: 0.6167 - accuracy: 0.6711
 Epoch 32/100
-67/67 [==============================] - 0s 774us/step - loss: 0.5893 - accuracy: 0.6976
+67/67 [==============================] - 0s 1ms/step - loss: 0.6067 - accuracy: 0.6799
 Epoch 33/100
-67/67 [==============================] - 0s 714us/step - loss: 0.5867 - accuracy: 0.7051
+67/67 [==============================] - 0s 1ms/step - loss: 0.5916 - accuracy: 0.6995
 Epoch 34/100
-67/67 [==============================] - 0s 714us/step - loss: 0.5863 - accuracy: 0.6991
+67/67 [==============================] - 0s 1ms/step - loss: 0.5992 - accuracy: 0.6881
 Epoch 35/100
-67/67 [==============================] - 0s 699us/step - loss: 0.5862 - accuracy: 0.6976
+67/67 [==============================] - 0s 1ms/step - loss: 0.6123 - accuracy: 0.6713
 Epoch 36/100
-67/67 [==============================] - 0s 744us/step - loss: 0.5867 - accuracy: 0.7006
+67/67 [==============================] - 0s 1ms/step - loss: 0.6127 - accuracy: 0.6895
 Epoch 37/100
-67/67 [==============================] - 0s 826us/step - loss: 0.5853 - accuracy: 0.7066
+67/67 [==============================] - 0s 1ms/step - loss: 0.5780 - accuracy: 0.7091
 Epoch 38/100
-67/67 [==============================] - 0s 684us/step - loss: 0.5851 - accuracy: 0.6946
+67/67 [==============================] - 0s 1ms/step - loss: 0.5428 - accuracy: 0.7386
 Epoch 39/100
-67/67 [==============================] - 0s 650us/step - loss: 0.5862 - accuracy: 0.7081
+67/67 [==============================] - 0s 1ms/step - loss: 0.5834 - accuracy: 0.6969
 Epoch 40/100
-67/67 [==============================] - 0s 669us/step - loss: 0.5844 - accuracy: 0.7066
+67/67 [==============================] - 0s 2ms/step - loss: 0.5982 - accuracy: 0.6924
 Epoch 41/100
-67/67 [==============================] - 0s 699us/step - loss: 0.5851 - accuracy: 0.6961
+67/67 [==============================] - 0s 2ms/step - loss: 0.6022 - accuracy: 0.6618
 Epoch 42/100
-67/67 [==============================] - 0s 664us/step - loss: 0.5832 - accuracy: 0.7081
+67/67 [==============================] - 0s 2ms/step - loss: 0.6234 - accuracy: 0.6635
 Epoch 43/100
-67/67 [==============================] - 0s 672us/step - loss: 0.5830 - accuracy: 0.7081
+67/67 [==============================] - 0s 1ms/step - loss: 0.5853 - accuracy: 0.7012
 Epoch 44/100
-67/67 [==============================] - 0s 672us/step - loss: 0.5864 - accuracy: 0.7036
+67/67 [==============================] - 0s 1ms/step - loss: 0.5962 - accuracy: 0.6858
 Epoch 45/100
-67/67 [==============================] - 0s 656us/step - loss: 0.5826 - accuracy: 0.7036
+67/67 [==============================] - 0s 1ms/step - loss: 0.5686 - accuracy: 0.7073
 Epoch 46/100
-67/67 [==============================] - 0s 699us/step - loss: 0.5843 - accuracy: 0.7081
+67/67 [==============================] - 0s 1ms/step - loss: 0.5803 - accuracy: 0.6978
 Epoch 47/100
-67/67 [==============================] - 0s 699us/step - loss: 0.5832 - accuracy: 0.7021
+67/67 [==============================] - 0s 1ms/step - loss: 0.5817 - accuracy: 0.7000
 Epoch 48/100
-67/67 [==============================] - 0s 744us/step - loss: 0.5823 - accuracy: 0.7006
+67/67 [==============================] - 0s 2ms/step - loss: 0.5838 - accuracy: 0.7077
 Epoch 49/100
-67/67 [==============================] - 0s 648us/step - loss: 0.5820 - accuracy: 0.7006
+67/67 [==============================] - 0s 1ms/step - loss: 0.5689 - accuracy: 0.7312
 Epoch 50/100
-67/67 [==============================] - 0s 699us/step - loss: 0.5819 - accuracy: 0.7066
+67/67 [==============================] - 0s 1ms/step - loss: 0.5698 - accuracy: 0.7116
 Epoch 51/100
-67/67 [==============================] - 0s 684us/step - loss: 0.5831 - accuracy: 0.6991
+67/67 [==============================] - 0s 1ms/step - loss: 0.6038 - accuracy: 0.6588
 Epoch 52/100
-67/67 [==============================] - 0s 684us/step - loss: 0.5810 - accuracy: 0.7081
+67/67 [==============================] - 0s 1ms/step - loss: 0.5520 - accuracy: 0.7356
 Epoch 53/100
-67/67 [==============================] - 0s 684us/step - loss: 0.5805 - accuracy: 0.7036
+67/67 [==============================] - 0s 2ms/step - loss: 0.5726 - accuracy: 0.7054
 Epoch 54/100
-67/67 [==============================] - 0s 684us/step - loss: 0.5808 - accuracy: 0.7111
+67/67 [==============================] - 0s 1ms/step - loss: 0.5769 - accuracy: 0.7059
 Epoch 55/100
-67/67 [==============================] - 0s 714us/step - loss: 0.5804 - accuracy: 0.7096
+67/67 [==============================] - 0s 1ms/step - loss: 0.5527 - accuracy: 0.7392
 Epoch 56/100
-67/67 [==============================] - 0s 699us/step - loss: 0.5812 - accuracy: 0.7141
+67/67 [==============================] - 0s 1ms/step - loss: 0.5802 - accuracy: 0.7009
 Epoch 57/100
-67/67 [==============================] - 0s 714us/step - loss: 0.5801 - accuracy: 0.7126
+67/67 [==============================] - 0s 1ms/step - loss: 0.5924 - accuracy: 0.6981
 Epoch 58/100
-67/67 [==============================] - 0s 699us/step - loss: 0.5794 - accuracy: 0.7066
+67/67 [==============================] - 0s 1ms/step - loss: 0.6058 - accuracy: 0.6940
 Epoch 59/100
-67/67 [==============================] - 0s 699us/step - loss: 0.5806 - accuracy: 0.6991
+67/67 [==============================] - 0s 1ms/step - loss: 0.5757 - accuracy: 0.7053
 Epoch 60/100
-67/67 [==============================] - 0s 821us/step - loss: 0.5795 - accuracy: 0.7036
+67/67 [==============================] - 0s 1ms/step - loss: 0.6016 - accuracy: 0.6924
 Epoch 61/100
-67/67 [==============================] - 0s 699us/step - loss: 0.5797 - accuracy: 0.6991
+67/67 [==============================] - 0s 1ms/step - loss: 0.5728 - accuracy: 0.7335
 Epoch 62/100
-67/67 [==============================] - 0s 666us/step - loss: 0.5778 - accuracy: 0.7096
+67/67 [==============================] - 0s 1ms/step - loss: 0.5682 - accuracy: 0.7227
 Epoch 63/100
-67/67 [==============================] - 0s 701us/step - loss: 0.5797 - accuracy: 0.7126
+67/67 [==============================] - 0s 1ms/step - loss: 0.5482 - accuracy: 0.7375
 Epoch 64/100
-67/67 [==============================] - 0s 657us/step - loss: 0.5789 - accuracy: 0.7066
+67/67 [==============================] - 0s 1ms/step - loss: 0.5914 - accuracy: 0.6970
 Epoch 65/100
-67/67 [==============================] - 0s 687us/step - loss: 0.5789 - accuracy: 0.7111
+67/67 [==============================] - 0s 1ms/step - loss: 0.5661 - accuracy: 0.7127
 Epoch 66/100
-67/67 [==============================] - 0s 672us/step - loss: 0.5781 - accuracy: 0.7096
+67/67 [==============================] - 0s 1ms/step - loss: 0.5689 - accuracy: 0.7220
 Epoch 67/100
-67/67 [==============================] - 0s 699us/step - loss: 0.5784 - accuracy: 0.7066
+67/67 [==============================] - 0s 1ms/step - loss: 0.5827 - accuracy: 0.6997
 Epoch 68/100
-67/67 [==============================] - 0s 714us/step - loss: 0.5767 - accuracy: 0.7111
+67/67 [==============================] - 0s 1ms/step - loss: 0.5917 - accuracy: 0.7032
 Epoch 69/100
-67/67 [==============================] - 0s 699us/step - loss: 0.5803 - accuracy: 0.7081
+67/67 [==============================] - 0s 1ms/step - loss: 0.5743 - accuracy: 0.7152
 Epoch 70/100
-67/67 [==============================] - 0s 699us/step - loss: 0.5769 - accuracy: 0.7111
+67/67 [==============================] - 0s 1ms/step - loss: 0.5550 - accuracy: 0.7285
 Epoch 71/100
-67/67 [==============================] - 0s 684us/step - loss: 0.5769 - accuracy: 0.7081
+67/67 [==============================] - 0s 1ms/step - loss: 0.5752 - accuracy: 0.6928
 Epoch 72/100
-67/67 [==============================] - 0s 684us/step - loss: 0.5804 - accuracy: 0.7096
+67/67 [==============================] - 0s 1ms/step - loss: 0.5725 - accuracy: 0.7147
 Epoch 73/100
-67/67 [==============================] - 0s 714us/step - loss: 0.5783 - accuracy: 0.7096
+67/67 [==============================] - 0s 2ms/step - loss: 0.5827 - accuracy: 0.7159
 Epoch 74/100
-67/67 [==============================] - 0s 714us/step - loss: 0.5766 - accuracy: 0.7096
+67/67 [==============================] - 0s 1ms/step - loss: 0.5850 - accuracy: 0.7165
 Epoch 75/100
-67/67 [==============================] - 0s 684us/step - loss: 0.5779 - accuracy: 0.7096
+67/67 [==============================] - 0s 1ms/step - loss: 0.5582 - accuracy: 0.7189
 Epoch 76/100
-67/67 [==============================] - 0s 744us/step - loss: 0.5782 - accuracy: 0.7081
+67/67 [==============================] - 0s 1ms/step - loss: 0.5748 - accuracy: 0.7026
 Epoch 77/100
-67/67 [==============================] - 0s 848us/step - loss: 0.5762 - accuracy: 0.7096
+67/67 [==============================] - 0s 1ms/step - loss: 0.5676 - accuracy: 0.6981
 Epoch 78/100
-67/67 [==============================] - 0s 906us/step - loss: 0.5760 - accuracy: 0.7111
+67/67 [==============================] - 0s 1ms/step - loss: 0.5723 - accuracy: 0.7126
 Epoch 79/100
-67/67 [==============================] - 0s 699us/step - loss: 0.5759 - accuracy: 0.7006
+67/67 [==============================] - 0s 2ms/step - loss: 0.5509 - accuracy: 0.7189
 Epoch 80/100
-67/67 [==============================] - 0s 595us/step - loss: 0.5771 - accuracy: 0.7036
+67/67 [==============================] - 0s 2ms/step - loss: 0.5770 - accuracy: 0.7089
 Epoch 81/100
-67/67 [==============================] - 0s 714us/step - loss: 0.5767 - accuracy: 0.7111
+67/67 [==============================] - 0s 1ms/step - loss: 0.5761 - accuracy: 0.6986
 Epoch 82/100
-67/67 [==============================] - 0s 803us/step - loss: 0.5757 - accuracy: 0.7111
+67/67 [==============================] - 0s 1ms/step - loss: 0.5503 - accuracy: 0.7384
 Epoch 83/100
-67/67 [==============================] - 0s 744us/step - loss: 0.5765 - accuracy: 0.7096
+67/67 [==============================] - 0s 1ms/step - loss: 0.5677 - accuracy: 0.7229
 Epoch 84/100
-67/67 [==============================] - 0s 744us/step - loss: 0.5747 - accuracy: 0.7111
+67/67 [==============================] - 0s 1ms/step - loss: 0.5745 - accuracy: 0.7118
 Epoch 85/100
-67/67 [==============================] - 0s 699us/step - loss: 0.5760 - accuracy: 0.7066
+67/67 [==============================] - 0s 1ms/step - loss: 0.5848 - accuracy: 0.6991
 Epoch 86/100
-67/67 [==============================] - 0s 818us/step - loss: 0.5759 - accuracy: 0.7111
+67/67 [==============================] - 0s 1ms/step - loss: 0.5765 - accuracy: 0.7019
 Epoch 87/100
-67/67 [==============================] - 0s 788us/step - loss: 0.5746 - accuracy: 0.7096
+67/67 [==============================] - 0s 1ms/step - loss: 0.5987 - accuracy: 0.6745
 Epoch 88/100
-67/67 [==============================] - 0s 893us/step - loss: 0.5757 - accuracy: 0.7081
+67/67 [==============================] - 0s 1ms/step - loss: 0.5643 - accuracy: 0.7047
 Epoch 89/100
-67/67 [==============================] - 0s 729us/step - loss: 0.5747 - accuracy: 0.6991
+67/67 [==============================] - 0s 1ms/step - loss: 0.5980 - accuracy: 0.6805
 Epoch 90/100
-67/67 [==============================] - 0s 669us/step - loss: 0.5764 - accuracy: 0.7096
+67/67 [==============================] - 0s 1ms/step - loss: 0.5748 - accuracy: 0.7116
 Epoch 91/100
-67/67 [==============================] - 0s 714us/step - loss: 0.5748 - accuracy: 0.7096
+67/67 [==============================] - 0s 1ms/step - loss: 0.5566 - accuracy: 0.7117
 Epoch 92/100
-67/67 [==============================] - 0s 878us/step - loss: 0.5777 - accuracy: 0.7051
+67/67 [==============================] - 0s 1ms/step - loss: 0.5519 - accuracy: 0.7255
 Epoch 93/100
-67/67 [==============================] - 0s 744us/step - loss: 0.5741 - accuracy: 0.7096
+67/67 [==============================] - 0s 1ms/step - loss: 0.5796 - accuracy: 0.6927
 Epoch 94/100
-67/67 [==============================] - 0s 699us/step - loss: 0.5748 - accuracy: 0.6976
+67/67 [==============================] - 0s 1ms/step - loss: 0.5539 - accuracy: 0.7420
 Epoch 95/100
-67/67 [==============================] - 0s 729us/step - loss: 0.5753 - accuracy: 0.7111
+67/67 [==============================] - 0s 1ms/step - loss: 0.5660 - accuracy: 0.7151
 Epoch 96/100
-67/67 [==============================] - 0s 744us/step - loss: 0.5761 - accuracy: 0.7111
+67/67 [==============================] - 0s 1ms/step - loss: 0.5745 - accuracy: 0.7142
 Epoch 97/100
-67/67 [==============================] - 0s 751us/step - loss: 0.5756 - accuracy: 0.7006
+67/67 [==============================] - 0s 2ms/step - loss: 0.6106 - accuracy: 0.6685
 Epoch 98/100
-67/67 [==============================] - 0s 744us/step - loss: 0.5748 - accuracy: 0.7111
+67/67 [==============================] - 0s 2ms/step - loss: 0.5514 - accuracy: 0.7219
 Epoch 99/100
-67/67 [==============================] - 0s 714us/step - loss: 0.5750 - accuracy: 0.7096
+67/67 [==============================] - 0s 2ms/step - loss: 0.5754 - accuracy: 0.7088
 Epoch 100/100
-67/67 [==============================] - 0s 759us/step - loss: 0.5756 - accuracy: 0.7096
+67/67 [==============================] - 0s 2ms/step - loss: 0.5990 - accuracy: 0.6866
 </pre>
 </div>
 </div>
@@ -14869,13 +14869,13 @@ Epoch 100/100
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;tensorflow.python.keras.callbacks.History at 0x26495f73970&gt;</pre>
+<pre>&lt;tensorflow.python.keras.callbacks.History at 0x16566dcf790&gt;</pre>
 </div>
 
 </div>
@@ -14892,7 +14892,7 @@ Epoch 100/100
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
@@ -14915,7 +14915,7 @@ Epoch 100/100
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>7/7 [==============================] - 0s 861us/step - loss: 0.5839 - accuracy: 0.7309
+<pre>7/7 [==============================] - 0s 1ms/step - loss: 0.5933 - accuracy: 0.7040
 </pre>
 </div>
 </div>
@@ -14923,13 +14923,13 @@ Epoch 100/100
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>[0.5839477777481079, 0.7309417128562927]</pre>
+<pre>[0.5932884216308594, 0.7040358781814575]</pre>
 </div>
 
 </div>
@@ -14941,7 +14941,7 @@ Epoch 100/100
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2"> Accuracy : </span><span class="si">%.4f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)[</span><span class="mi">1</span><span class="p">]))</span>
@@ -14964,9 +14964,9 @@ Epoch 100/100
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>7/7 [==============================] - 0s 943us/step - loss: 0.5839 - accuracy: 0.7309
+<pre>7/7 [==============================] - 0s 1ms/step - loss: 0.5933 - accuracy: 0.7040
 
- Accuracy : 0.7309
+ Accuracy : 0.7040
 </pre>
 </div>
 </div>
@@ -14978,7 +14978,7 @@ Epoch 100/100
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_val</span><span class="p">)</span>
@@ -14992,7 +14992,7 @@ Epoch 100/100
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sub</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;./titanic/gender_submission.csv&quot;</span><span class="p">)</span>
@@ -15012,7 +15012,7 @@ Epoch 100/100
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
 
 
 
@@ -15030,7 +15030,7 @@ Epoch 100/100
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pred</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">0.5</span>
@@ -15049,16 +15049,16 @@ Epoch 100/100
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>array([False, False, False, False, False, False, False,  True, False,
-       False, False,  True,  True, False,  True, False, False, False,
+       False, False,  True,  True,  True,  True,  True, False, False,
        False, False,  True,  True,  True,  True,  True, False,  True,
-       False,  True, False, False, False, False, False,  True, False,
+       False,  True, False,  True, False, False, False,  True, False,
        False, False, False, False,  True,  True, False, False,  True,
        False,  True, False,  True,  True,  True, False,  True,  True,
        False, False, False, False, False,  True, False, False, False,
@@ -15066,9 +15066,9 @@ Epoch 100/100
        False,  True,  True,  True, False,  True, False, False, False,
         True,  True, False, False, False, False, False, False,  True,
        False, False,  True, False,  True, False,  True, False, False,
-       False,  True, False, False, False, False, False, False, False,
+       False,  True,  True, False, False, False, False, False, False,
        False, False, False, False,  True, False,  True, False, False,
-       False,  True, False, False, False,  True, False, False,  True,
+       False,  True,  True, False, False,  True, False, False,  True,
        False, False, False, False, False,  True, False, False, False,
        False, False, False, False, False, False,  True,  True, False,
         True, False,  True, False,  True,  True,  True, False, False,
@@ -15076,31 +15076,31 @@ Epoch 100/100
        False, False, False, False,  True, False,  True, False, False,
        False, False, False, False,  True, False,  True,  True,  True,
        False,  True,  True, False,  True, False,  True, False, False,
-       False, False,  True, False, False,  True, False,  True, False,
+       False,  True,  True, False, False,  True, False,  True, False,
        False, False, False,  True,  True,  True, False,  True, False,
-       False,  True, False, False, False, False, False, False,  True,
-       False,  True,  True, False, False, False, False, False,  True,
+       False,  True, False, False, False, False,  True, False,  True,
+       False,  True,  True, False,  True, False, False, False,  True,
         True, False, False, False, False, False,  True, False, False,
         True, False,  True, False,  True,  True,  True,  True,  True,
-       False, False,  True, False,  True, False, False,  True, False,
+       False, False,  True, False,  True,  True, False,  True, False,
         True, False, False, False, False, False, False, False, False,
        False,  True, False, False, False,  True, False, False, False,
-        True, False,  True, False, False, False, False, False, False,
+        True, False,  True, False, False,  True, False,  True,  True,
        False, False, False, False, False, False, False, False,  True,
        False, False,  True, False, False,  True, False, False,  True,
        False,  True, False, False, False,  True, False, False,  True,
         True,  True,  True, False, False, False, False, False,  True,
        False,  True, False, False, False, False, False, False,  True,
-        True, False,  True,  True, False, False,  True,  True, False,
+        True, False,  True,  True,  True, False,  True,  True, False,
        False, False,  True, False,  True, False, False, False, False,
        False,  True, False, False, False, False, False, False,  True,
        False, False,  True, False,  True,  True, False, False, False,
        False,  True, False, False,  True, False, False, False,  True,
-       False, False,  True,  True, False,  True,  True, False, False,
+       False,  True,  True,  True, False,  True,  True, False, False,
         True, False, False, False, False, False, False,  True, False,
        False, False, False,  True,  True,  True, False, False,  True,
-       False,  True, False, False,  True, False,  True,  True,  True,
-       False, False,  True, False, False, False,  True, False, False,
+       False,  True, False, False,  True,  True,  True,  True,  True,
+       False,  True,  True, False, False, False,  True, False, False,
         True, False, False, False])</pre>
 </div>
 
@@ -15113,7 +15113,7 @@ Epoch 100/100
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sub</span><span class="p">[</span><span class="s1">&#39;Survived&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pred</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">0.5</span>
@@ -15127,10 +15127,25 @@ Epoch 100/100
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sub</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;titanic_submit0528.csv&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sub</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">sub</span><span class="p">[</span><span class="s1">&#39;Survived&#39;</span><span class="p">]</span><span class="o">==</span><span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;Survived&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">sub</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">sub</span><span class="p">[</span><span class="s1">&#39;Survived&#39;</span><span class="p">]</span><span class="o">==</span><span class="kc">False</span><span class="p">,</span> <span class="s1">&#39;Survived&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sub</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;titanic_submit.csv&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 
      </div>
