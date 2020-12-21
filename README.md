@@ -7,7 +7,7 @@
 #### PDF
  * 머신러닝 리뷰 [pdf](https://ldjwj.github.io/DL_Basic_Class/part04_01_dl_start/01A_DLML_Review_v121_2001_pdfver.pdf)
  * 딥러닝 입문 [pdf](https://ldjwj.github.io/DL_Basic_Class/part04_01_dl_start/01B_DLML_딥러닝기초.pdf)
- * 딥러닝 알고리즘  [pdf](https://ldjwj.github.io/DL_Basic_Class/part04_02_dl_mnist/01C_딥러닝 입문_2001_v10.pdf)
+ * 딥러닝 알고리즘  [pdf](https://ldjwj.github.io/DL_Basic_Class/part04_02_dl_mnist/01C_DL_Intro_2001_v10.pdf)
  
  
 ### SourceCode
